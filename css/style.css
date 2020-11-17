@@ -298,4 +298,41 @@ element.style {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.sp-col {
+    height: 800px;
+    background-color: #f9f9f9;
+}
 
+.whrl-col {
+    height: 800px;
+    background-color: #f5b12d;
+}
+
+.ftc-col {
+    height: 800px;
+    background-image: linear-gradient(to right, #172e4a, #39577c, #172e4a);
+}
+
+#sp-header {
+    font-size: 56px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#whrl-header {
+    font-size: 56px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    color: #f9f9f9;
+}
+
+#ftc-header {
+    font-size: 56px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    color: #f9f9f9;
+}
