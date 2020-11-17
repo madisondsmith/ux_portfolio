@@ -209,12 +209,12 @@ svg {
     overflow: scroll;
 }
 
-/*@media (max-width: 700px)*/
-
-.site-search-content {
-    width: 90%;
-    padding-left: 0;
-    padding-right: 0;
+@media only screen and (max-width: 700px) {
+    .site-search-content {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .site-search-content {
@@ -223,9 +223,11 @@ svg {
     max-width: 1200px;
 }
 
-.siteSearchInput {
-    font-size: 4vw;
-    padding: 15px 15px 15px 20px;
+@media only screen and (max-width: 700px) {
+    .siteSearchInput {
+        font-size: 4vw;
+        padding: 15px 15px 15px 20px;
+    }
 }
 
 .siteSearchInput {
