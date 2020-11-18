@@ -276,11 +276,6 @@ svg {
     box-sizing: border-box;
 }
 
-element.style {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 .portfolio-intro-header {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -291,6 +286,15 @@ element.style {
     font-weight: 400;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    animation-name: subBannerHeading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+}
+
+@keyframes subBannerHeading {
+    0% {transform: translateX(-50px); opacity: 0%;}
+    100% {transform: translateX(0); opacity: 100%;}
 }
 
 .portfolio-intro-name {
@@ -298,42 +302,66 @@ element.style {
     font-weight: 500;
     font-size: 80px;
     font-family: 'Courier New', Courier, monospace;
+    animation-name: bannerHeading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+}
+
+@keyframes bannerHeading {
+    0% {transform: translateY(-50px); opacity: 0%;}
+    100% {transform: translateY(0); opacity: 100%;}
 }
 
 .sp-col {
-    height: 800px;
+    height: 600px;
+    width: 100%;
     background-color: #f9f9f9;
 }
 
 .whrl-col {
-    height: 800px;
+    height: 600px;
+    width: 100%;
     background-color: #f5b12d;
 }
 
 .ftc-col {
-    height: 800px;
+    height: 600px;
+    width: 100%;
     background-image: linear-gradient(to right, #172e4a, #39577c, #172e4a);
 }
 
 #sp-header {
     font-size: 56px;
     font-weight: 800;
+    margin: 60px auto 0.65em;
     font-family: 'Courier New', Courier, monospace;
     background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+#sp-header:hover {
+    transform: scale3d(1.03, 1.03, 0);
 }
 
 #whrl-header {
-    font-size: 56px;
+    font-size: 4vw;
+    margin: 60px auto 0.65em;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
     color: #f9f9f9;
 }
 
 #ftc-header {
-    font-size: 56px;
+    font-size: 4vw;
+    margin: 60px auto 0.65em;
+    margin-left: auto;
+    margin-right: autos;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
     color: #f9f9f9;
