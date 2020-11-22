@@ -321,6 +321,10 @@ svg {
     background-color: #f9f9f9;
 }
 
+.grid-items-feat-first {
+    flex: 1 100%;
+}
+
 .whrl-col {
     height: 600px;
     width: 100%;
@@ -584,6 +588,31 @@ p {
     width: 100%;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 700px) {
+    .sp-deliverable {
+        font-size: 16vw;
+    }
+}
+
+.sp-deliverable {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 48px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    line-height: 1em;
+    pointer-events: none;
+    flex: 1 100%;
+}
+
+.sp-wave {
+    position: relative;
+    max-width: 100%;
+}
+
 
 
 
