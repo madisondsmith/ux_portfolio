@@ -6,26 +6,76 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Madison's UX Portfolio</title>
 
+    <script src="js/index.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script type="text/javascript" src="js/app.js?v=1"></script>
+    <script defer="" type="text/javascript" src="js/portfolio.js"></script>
+
 </head>
 
-<body class="layout-portfolio">
+<body class="layout-portfolio no-scroll">
     
-    <div class="site-header">
+    <div class="site-header site-header-portfolio">
 
-        <canvas class="site-nav-canvas" width="1298" height="1642"></canvas>
+        <canvas class="site-nav-canvas" width="1860" height="1642" style="display: none;"></canvas>
         <button class="js-menu menu button-clear" aria-label="site-navigation">
             <span class="menu-icon-line-1 menu-icon-line"></span>
             <span class="menu-icon-line-2 menu-icon-line"></span>
             <span class="menu-icon-line-3 menu-icon-line"></span>
         </button>
-        <div class="site-nav-overlay js-nav">
-            <div class="nav-content"></div>
+        <div class="site-nav-overlay js-nav site-nave-active" style="opacity: 0;">
+            <div class="nav-content">
+                <div class="js-nav-header nav-header" style="opacity: 1;">
+                    <span class="nav-header-text">Menu</span>
+                    <div class="nav-header-line js-nav-header-line" style="transform:scaleX(0.5);"></div>
+                </div>
+                <ul class="nav-categories">
+                    <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                        <a href="/seqrpay/" class="nav-link">
+                            Responsive Web Design
+                            <!-- ::after -->
+                        </a>
+                    </li>
+                    <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                        <a href="/WHRL/" class="nav-link">
+                            App Design
+                            <!-- ::after -->
+                        </a>
+                    </li>
+                    <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                        <a href="/ftc/" class="nav-link">
+                            Website Redesign
+                            <!-- ::after -->
+                        </a>
+                    </li>
+                    <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                        <a href="/compositions/" class="nav-link">
+                            Writing
+                            <!-- ::after -->
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-sublinks js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                    <div class="js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
+                        <a class="nav-link nav-sublink" href="/contact/">
+                            Contact Me
+                            <!-- ::after -->
+                        </a>
+                        <a class="nav-link nav-sublink" href="/resume">
+                            My resume
+                            <!-- ::after -->
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <h1 class="site-name site-name-portfolio">
-            <a class="siteLogolink" href="/" aria-label="Start page"></a>
+            <a class="siteLogolink" href="#" aria-label="Start page">MDS LOGO
+                <!-- <svg class="mds-logo" style="height: 16px; width: 24px; background-color: black;"></svg> -->
+            </a>
         </h1>
-        <button class="site-search js-search button button-clear" aria-label="Search site">
-            <span class="site-search-icon">
+        <button class="site-search js-search button-clear" aria-label="Search site">
+            <span class="site-search-icon" style="transform: translateY(0px) rotate(0deg) scale(1); opacity: 1;;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 38.96 41.469">
                     <circle class="site-search-icon-circle" fill="none" stroke-width="4px" cx="16.465" cy="16.484" r="14.465"></circle>
                     <path class="site-search-icon-line" d="M2791.72, 95.441l3.03-3.034, 13.1, 13.968-3.03, 3.034Z" transform ="translate(-2768.88 -67.938)"></path>
@@ -36,9 +86,9 @@
                 <span class="site-search-close-icon-line site-search-close-icon-line-2"></span>
             </span>
         </button>
-        <div class="js-search-overlay site-nav-overlay-search">
+        <div class="js-search-overlay site-nav-overlay-search" style="opacity: 0;">
             <div class="site-search-content">
-                <input placeholder="Search..." type="text" class="js-search-input siteSearchInput">
+                <input placeholder="Search..." type="text" class="js-search-input siteSearchInput" style="opacity: 0; transform:translateX(25px);">
                 <div class="site-search-content-results js-site-search-content-results">
                     <div class="site-search-content-results-list"></div>
                 </div>
@@ -47,29 +97,80 @@
 
     </div>
     <div class="porfolio-header-bg"></div>
-    <div class="hero-section">
-        <div class="hero-tab"></div>
-        <h1 class="portfolio-intro-header portfolio-intro-name" style="opacity: 1; transform: translateY(0px);">Madison Dennis Smith</h1>
-        <h2 class="portfolio-intro-header" style="opacity: 1; transform: translateY(0px);">I'm a writer, a thinker, an artist, and a storyteller.</h2>
+    <div class="section hero-section">
+        <div class="hero-tab">
+            <h1 class="hero-name" style="opacity: 1; transform: translateY(0px);">Madison Dennis Smith</h1>
+            <div class="hero-sketch-section hero-sketch">
+                <img src="images/hero-sketch.png" alt="author sketch">
+            </div>
+            <h2 class="portfolio-intro-header" style="opacity: 1; transform: translateY(0px);">I'm a UX Designer, a writer, a thinker, an artist, and a storyteller.</h2>
+        </div>
+        
     </div>
     
-    <div class="hero-sketch-section hero-sketch">
-        <img src="/images/heroSketch.png" alt="author sketch" class="hero-sketch" width="96" height="103">
+    <div class="section grid-items grid-items-feature-first grid-items-preview">
+        <h2 class="section-header">Projects.</h2>
+        <a href="#" class="grid-item post-preview" style="background-color: #f9f9f9;">
+        <h1 class="grid-item-header" style="color: rgba(0, 0, 0, 1);">seqrpay</h1>
+        <div class="project project-preview">
+            <div class="project-banner">
+                <div class="project-banner-content">
+                    <img src="images/seqrpay-logo.png" alt="seqrpay logo" width="176" height="176">
+                </div>
+            </div>
+        </div>
+        <p class="grid-item-text" style="color: rgba(0, 0, 0, 1);">As the UX Designer for seqrpay starup,
+            I worked with a design team of four and stakeholders
+            during this two-week sprint to create their first website
+            and design system for mobile and desktop.</p>
+        </a>
+        <div class="project-banner-border">
+            <img class="sp-wave" src="images/sp-wave.png" alt="seqrpay wave vector" width="100%" style="background-color: #f9f9f9;">
+        </div>
+
+
+        <a href="#" class="grid-item post-preview" style="background-color: #f5b12d;">
+            <h1 class="grid-item-header" style="color: rgba(0, 0, 0, 1);">WHRL Case Study</h1>
+            <div class="project project-preview">
+                <div class="project-banner">
+                    <div class="project-banner-content">
+                        <img src="images/whrl-logo.png" alt="seqrpay logo" width="176" height="176">
+                    </div>
+                </div>
+            </div>
+            <p class="grid-item-text" style="color: rgba(0, 0, 0, 1);">[WHRL deliverable sentence here]</p>
+            </a>
+
+            <a href="#" class="grid-item post-preview" style="background-color: #f1f1f1;">
+                <h1 class="grid-item-header" style="color: rgba(0, 0, 0, 1);">ftc.gov redesign</h1>
+                <div class="project project-preview">
+                    <div class="project-banner">
+                        <div class="project-banner-content">
+                            <img src="images/ftc-crest.png" alt="seqrpay logo" width="176" height="176">
+                        </div>
+                    </div>
+                </div>
+                <p class="grid-item-text" style="color: rgba(0, 0, 0, 1);">[ftc deliverable sentence here]</p>
+                </a>
     </div>
+
+
+<!-- BEGIN OLD PROJECT TILE CODE -->
+<!--  
     <div class="section project-cards project-cards-first project-cards-preview">
         <h2 class="section-header">PROJECTS.</h2>
         <div class="container">
             <div class="row">
               <div class="col-sm sp-col grid-items-feat-first grid-items-preview">
                 <h2 id="sp-header">seqrpay</h2>
-                <img src="/images/seqrpay logo.png" alt="project logo" class="project-logo" height="176" width="176">
+                <img src="images/seqrpay-logo.png" alt="project logo" class="project-logo" height="176" width="176">
                 <h3 class="sp-deliverable">
                     As the UX Designer for seqrpay starup,<br>
                     I worked with a design team of four and stakeholders<br>
                     during this two-week sprint to create their first website<br>
                     and design system for mobile and desktop.<br>
                 </h3>
-                <img src="/images/sp-wave.png" alt="wave vector" class="sp-wave">
+                <img src="images/sp-wave.png" alt="wave vector" class="sp-wave">
               </div>
             </div>
         </div>
@@ -77,14 +178,14 @@
             <div class="row">
               <div class="col-sm whrl-col grid-items-feat-first grid-items-preview">
                 <h2 id="whrl-header">WHRL</h2>
-                <img src="/images/whrLogo.png" alt="project logo" alt="project logo" class="project-logo" height="176" width="176">
+                <img src="images/whrl-logo.png" alt="project logo" alt="project logo" class="project-logo" height="176" width="176">
                 <h3 class="whrl-deliverable" style="color: white;">
                     [deliverable about WRHL project here]
                 </h3>
               </div>
               <div class="col-sm ftc-col grid-items-feat-first grid-items-preview">
                 <h2 id="ftc-header">ftc.gov redesign</h2>
-                <img src="/images/ftcCrest.png" alt="ftc crest" alt="project logo" class="project-logo" height="176" width="176">
+                <img src="images/ftc-crest.png" alt="ftc crest" alt="project logo" class="project-logo" height="176" width="176">
                 <h3 class="ftc-deliverable" style="color: white;">
                     [deliverable about ftc-redesign project here]
                 </h3>
@@ -92,15 +193,41 @@
             </div>
         </div>
     </div>
+-->
+<!-- END OLD PRJOECT TILE CODE -->
 
     <div class="section grid-items ">
-        <h2 class="section-header">COMPOSITIONS.</h2>
-        <div class="grid-item grid-item-wide grid-item-1">"A Sly Pompous Grin" <br>Read this piece ></div>
-        <div class="grid-item grid-item-wide grid-item-2">"It Remains Silent" <br>Read this piece ></div>
-        <div class="grid-item grid-item-wide grid-item-3">"Belong" <br>Read this piece ></div>
-        <div class="grid-item grid-item-wide grid-item-4">"Yoke" <br>Read this piece ></div>
-        <div class="grid-item grid-item-wide grid-item-5">"Whisper In One's Ear" <br>Read this piece ></div>
-        <div class="grid-item grid-item-wide grid-item-6">"Peradventure" <br>Read this piece ></div>
+        <h2 class="section-header">Writings.</h2>
+        <a href="#" aria-label="Go to first writing" class="grid-item grid-item-wide grid-item-1">
+            <h3 class="grid-item-header grid-item-header-1">"A Sly Pompous Grin" </h3>
+            <p class="grid-item-text grid-item-text-1">Read this piece ></p>
+        </a>
+            
+        <a href="#" aria-label="Go to second writing" class="grid-item grid-item-wide grid-item-2"> 
+            <h3 class="grid-item-header grid-item-header-2">"It Remains Silent"</h3>
+            <p class="grid-item-text grid-item-text-2">Read this piece ></p>
+        </a>
+            
+        <a href="#" aria-label="Go to third writing" class="grid-item grid-item-wide grid-item-3">
+            <h3 class="grid-item-header grid-item-header-3">"Belong" </h3>
+            <p class="grid-item-text grid-item-text-3">Read this piece ></p>
+        </a>
+            
+        <a href="#" aria-label="Go to fourth writing" class="grid-item grid-item-wide grid-item-4"> 
+            <h3 class="grid-item-header grid-item-header-4">"Yoke"</h3>
+            <p class="grid-item-text grid-item-text-4">Read this piece ></p>
+        </a>
+            
+        <a href="#" aria-label="Go to fifth writing" class="grid-item grid-item-wide grid-item-5">
+            <h3 class="grid-item-header grid-item-header-5">"Whisper In One's Ear" </h3>
+            <p class="grid-item-text grid-item-text-5">Read this piece ></p>
+        </a>
+            
+        <a href="#" aria-label="Go to sixth writing" class="grid-item grid-item-wide grid-item-6"> 
+            <h3 class="grid-item-header grid-item-header-6">"Peradventure"</h3>
+            <p class="grid-item-text grid-item-text-6">Read this piece ></p>
+        </a>
+            
     </div>
 
     <div class="section meet-madison">
@@ -132,13 +259,13 @@
     
             <div class="media-icons"></div>
             <div class="meet-image">
-                <img src="/images/madisonphoto.jpeg" alt="contact photo" class="contact-photo" height="867" width="600">
+                <img src="images/no-crop-madisonphoto.jpeg" alt="contact photo" class="contact-photo" height="867" width="600" l>
             </div>
         </div>
     </div>
 
 
     
-    <script src="/js/index.js"></script>
+    
 </body>
 </html>
