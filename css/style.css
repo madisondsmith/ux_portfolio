@@ -498,7 +498,7 @@ h2 {
 
 .section-header {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 80px;
+    font-size: 64px;
     font-weight: 800;
     padding: 5px 5px;
     letter-spacing: -0.02em;
@@ -528,8 +528,8 @@ h2 {
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0px auto -96px;
-    padding: 40px;
+    margin: 0px auto 4px;
+    padding: 16px;
 }
 
 .grid-items {
@@ -779,3 +779,29 @@ p {
 .project-banner-content {
     margin: 5px 0 40px;
 }
+
+.project-banner-border {
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #291a71; */
+    background: -webkit-linear-gradient(90deg, #291a71, #345eea 75%);
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    border-top: #f9f9f9;
+    border-width: 100px;
+    text-align: center;
+    color: white;
+    /* box-sizing: border-box; */
+    padding: 0px;
+}
+
+.wave-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    
+  }
