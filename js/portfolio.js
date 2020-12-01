@@ -1,3 +1,4 @@
+/*
 const portfolio = {
     header: {},
     ml: {},
@@ -136,3 +137,4 @@ const portfolio = {
     clearInterval(portfolio.minecraft.loop);
     portfolio.minecraft.isInMotion = false;
   }
+  */
