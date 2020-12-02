@@ -500,7 +500,8 @@ h2 {
 }
 
 .section-header {
-    font-family: capitolium-2, serif;
+    font-family: fredericka-the-greatest, serif;
+    /* font-family: capitolium-2, serif; */
     font-size: 80px;
     font-weight: 400;
     font-style: normal;
@@ -512,6 +513,17 @@ h2 {
     line-height: 0.6em;
     pointer-events: none;
     flex: 1 100%;
+
+    animation-name: sectionHeader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+@keyframes sectionHeader {
+    0% {font-weight: 400;}
+    50% {font-weight: 700;}
+    100% {font-weight: 400;}
 }
 
 .grid-items {
@@ -662,10 +674,31 @@ h2 {
     transition: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-@media only screen and (max-width: 600px) {
-    .grid-item-header {
-        font-size: 9.5vmin;
-        max-width: 80%;
+
+
+.contact-info {
+    color: #f1f1f1;
+    padding-top: 75px;
+    padding-right: 55%;
+    padding-left: 50px;
+    background-color: #815f33;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 520px) {
+    .contact-info {
+        padding-top: 45px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-info {
+        padding-right: 50px;
+        height: auto;
     }
 }
 
@@ -677,31 +710,6 @@ h2 {
     margin: 60 auto 0.65em;
     transition: cubic-bezier(0.175, 0.855, 0.32, 1.275);
     transform: translateZ(0);
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    max-width: 680px;
-    z-index: 10;
-    letter-spacing: -0.3px;
-}
-
-.contact-info {
-    color: #f1f1f1;
-    padding-top: 75px;
-    padding-right: 55%;
-    background-color: #815f33;
-    text-align: left;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.grid-header {
-    text-decoration: none;
-    font-size: 46px;
-    line-height: 1.3em;
-    margin: 60px auto 0.65em;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: translateZ(0);
     font-weight: 800;
     margin-left: auto;
     margin-right: auto;
@@ -709,45 +717,33 @@ h2 {
     max-width: 680px;
     z-index: 10;
     letter-spacing: -0.3px;
+    text-decoration: none;
 }
 
+
 @media only screen and (max-width: 600px) {
-    .grid-header {
+    .grid-item-header {
         font-size: 9.5vmin;
         max-width: 80%;
     }
 }
 
-.grid-header-left {
+.grid-item-header-left {
     margin-top: 0;
     max-width: 440px;
     margin-left: 0;
     margin-bottom: 50px;
     display: block;
-    /* font-size: 56px; */
+    font-size: 40px;
 }
 
-.grid-text-left {
+.grid-item-text-left {
     max-width: 70%;
     margin: 0 0 2em;
 }
 
-.grid-text {
-    margin: 0 auto 60px;
-    width: 80%;
-    z-index: 10;
-    max-width: 500px;
-    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
 p {
     margin-bottom: 2em;
-}
-
-@media only screen and (max-width: 800px) {
-    .meet-image {
-        display: none;
-    }
 }
 
 .meet-image {
@@ -759,45 +755,26 @@ p {
     background-color: #f1f1f1;
 }
 
+@media only screen and (max-width: 800px) {
+    .meet-image {
+        display: none;
+    }
+}
+
 .contact-photo {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-@media only screen and (max-width: 700px) {
-    .sp-deliverable {
-        font-size: 16vw;
-    }
-}
-
-.sp-deliverable {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 48px;
-    text-align: center;
-    z-index: 10;
-    position: relative;
-    line-height: 1em;
-    pointer-events: none;
-    flex: 1 100%;
-}
-
-.sp-wave {
-    /* position: relative; */
-    /* max-width: 100%; */
-
+.project-banner-content {
+    margin: 5px 0 40px;
 }
 
 @media only screen and (max-width: 600px) {
     .project-banner-content {
         margin-top: 0;
     }
-}
-
-.project-banner-content {
-    margin: 5px 0 40px;
 }
 
 .project-banner-border {
@@ -825,3 +802,17 @@ p {
     /* width: 100%; */
     
   }
+
+.contact-link {
+    padding: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 55px;
+    vertical-align: middle;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
