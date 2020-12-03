@@ -678,6 +678,12 @@ h2 {
     font-style: normal;
 }
 
+.grid-item-0 {
+    color: #f2f2f2;
+    background-color: #172e4a;
+    padding-bottom: 100px;
+}
+
 @media only screen and (max-width: 800px) {
     .contact-info {
         padding-right: 50px;
@@ -836,4 +842,9 @@ p {
     width: 30px;
     height: 30px;
     display: inline-block;
+}
+
+.layout-writings {
+    height: 100%;
+    background-color: #f2f2f2;
 }
