@@ -80,10 +80,6 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     background-color: #f9f9f9;
 }
 
-.site-nav-active {
-    pointer-events: initial;
-}
-
 .site-nav-overlay {
     position: fixed;
     top: 0;
@@ -460,6 +456,10 @@ h2 {
 
 .grid-items-preview {
     margin-top: -60px;
+}
+
+.grid-item-ftc {
+    background: -webkit-linear-gradient(360deg, #172e4a, #39577c 75%);
 }
 
 .whrl-col {
