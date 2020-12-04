@@ -13,12 +13,19 @@ body {
     background-color: #ede5de;
 }
 
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
 .site-header-portfolio {
     position: absolute;
     width: 100%;
 }
 
-html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, ul, li, label, table{
+html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, ul, li, label, table {
     border: 0;
     vertical-align: baseline;
     margin: 0;
