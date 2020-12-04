@@ -104,6 +104,10 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     overflow: hidden;
 }
 
+.site-nav-active {
+    pointer-events: initial;
+}
+
 .nav-content {
     width: 620px;
     max-width: 100%;
@@ -434,12 +438,31 @@ svg {
     100% {transform: translateX(0); opacity: 100%;}
 }
 
-.portfolio-intro-name {
-    opacity: 0;
-    font-weight: 500;
-    font-size: 80px;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 0.6em;
+/*
+.rough-logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 600px) {
+    .rough-logo {
+        
+    }
+}
+
+.logo-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+*/
+
+.hero-sketch {
+    /* margin: 16px 16px; */
 }
 
 h2 {
@@ -513,10 +536,6 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     position: relative;
     color: #f9f9f9;
-}
-
-.hero-sketch {
-    margin: 16px 16px;
 }
 
 @media only screen and (max-width: 600px) {
