@@ -112,7 +112,7 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     width: 620px;
     max-width: 100%;
     margin: 40px auto;
-    margin-top: 18vh;
+    margin-top: 8vh;
     padding: 0 60px;
     box-sizing: border-box;
 }
@@ -459,11 +459,12 @@ svg {
     width: 100%;
     object-fit: cover;
 }
-*/
+
 
 .hero-sketch {
-    /* margin: 16px 16px; */
+    margin: 16px 16px;
 }
+*/
 
 h2 {
     display: block;
