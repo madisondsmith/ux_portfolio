@@ -117,6 +117,27 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     box-sizing: border-box;
 }
 
+/* site nav landscape view */
+@media only screen and (max-height: 720px) {
+    .nav-content {
+        margin-top: 15vh;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .nav-content {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .nav-content {
+        margin-top: 6vh;
+    }
+}
+/* end site nav landscape view queries */
+
 @media only screen and (max-width: 600px) {
     .nav-content {
         padding-left: 32px;
@@ -177,6 +198,29 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     transform: translateZ(0);
 }
 
+/* site nav links landscape view */
+@media only screen and (max-height: 720px) {
+    .nav-link {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    .nav-link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+/* end site nav links landscape view queries */
+
 .nav-sublinks {
     font-family: capitolium-2, serif;
     font-size: 0.4em;
@@ -189,6 +233,22 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     text-align: center;
 
 }
+
+/* site nav sublink landscape view */
+@media only screen and (max-height: 550px) {
+    .nav-sublink {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .nav-sublink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+/* end site nav sublinks landscape view queries */
 
 .site-name-portfolio {
     color: #151211;
@@ -345,16 +405,16 @@ svg {
     transition: opacity 0.9s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
-    .section {
-        padding: 15px;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     .section {
         padding-right: 30px;
         padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        padding: 15px;
     }
 }
 
@@ -388,6 +448,12 @@ svg {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 420px) {
+    .hero-name {
+        padding: 2vw 0;
+    }
+}
+
 .hero-name {
     font-family: fredericka-the-greatest, serif;
     margin-top: 70px;
@@ -404,12 +470,6 @@ svg {
 @keyframes bannerHeading {
     0% {transform: translateY(-50px); opacity: 0%;}
     100% {transform: translateY(0); opacity: 100%;}
-}
-
-@media only screen and (max-width: 420px) {
-    .hero-name {
-        padding: 2vw 0;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -582,11 +642,40 @@ h2 {
     padding-bottom: 20px;
 }
 
+/*
 @media only screen and (max-width: 800px) {
     .post-preview {
         flex: 1 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+}
+*/
+
+@media only screen and (max-width: 900px) {
+    .grid-item {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-item {
+        flex: 1 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .grid-item {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -602,34 +691,6 @@ h2 {
     display: flex;
     text-align: center;
     text-decoration: none;
-}
-
-@media only screen and (max-width: 800px) {
-    .grid-item {
-        flex: 1 100%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .grid-item {
-        padding-right: 35px;
-        padding-left: 35px;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    .grid-item {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .grid-item {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 
 .grid-item-1 {
@@ -710,13 +771,6 @@ h2 {
     padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-    .contact-info {
-        padding-right: 50px;
-        height: auto;
-    }
-}
-
 .grid-item-text {
     font-family: capitolium-2, serif;
     margin: 0 auto 60px;
@@ -726,17 +780,11 @@ h2 {
     transition: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-
-
-.contact-info {
-    color: #f1f1f1;
-    padding-top: 75px;
-    padding-right: 55%;
-    padding-left: 50px;
-    background-color: #815f33;
-    text-align: left;
-    position: relative;
-    box-sizing: border-box;
+@media only screen and (max-width: 800px) {
+    .contact-info {
+        padding-right: 50px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -747,11 +795,15 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .contact-info {
-        padding-right: 50px;
-        height: auto;
-    }
+.contact-info {
+    color: #f1f1f1;
+    padding-top: 75px;
+    padding-right: 55%;
+    padding-left: 50px;
+    background-color: #815f33;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .grid-item-header {
@@ -799,6 +851,12 @@ p {
     margin-bottom: 2em;
 }
 
+@media only screen and (max-width: 800px) {
+    .meet-image {
+        display: none;
+    }
+}
+
 .meet-image {
     position: absolute;
     top: 0;
@@ -806,12 +864,6 @@ p {
     bottom: 0;
     width: 50%;
     background-color: #f1f1f1;
-}
-
-@media only screen and (max-width: 800px) {
-    .meet-image {
-        display: none;
-    }
 }
 
 .contact-photo {
