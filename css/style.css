@@ -164,7 +164,6 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     text-decoration: none;
     transition: color 0.25s ease-in-out;
     transform: translateZ(0);
-    pointer-events: fill;
 }
 
 .nav-sublinks {

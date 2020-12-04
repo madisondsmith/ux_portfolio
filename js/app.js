@@ -86,7 +86,7 @@ app.search.loadData = () => {
     .then(data => {
       localStorage.setItem(app.search.storageKey, JSON.stringify(data));
       app.search.data = data["items"];
-    }).catch( err => { /* Handle error */ });
+    }).catch( err => { /* Handle error */ }); 
 }
 
 app.search.updateForQuery = query => {
@@ -133,6 +133,8 @@ app.search.renderResults = (results, query) => {
 
   listenAll(".js-site-search-results-item", "mouseenter", e => app.search.focusItem(e.target));
 }
+
+
 // Menu Listener
 app.menu.visible = false;
 app.ready(() => {
