@@ -89,6 +89,7 @@ app.search.loadData = () => {
     }).catch( err => { /* Handle error */ }); 
 }
 
+
 app.search.updateForQuery = query => {
   query = query.toLowerCase();
   let hits = [];
