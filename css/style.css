@@ -20,6 +20,30 @@ body {
     background-color: #ede5de;
 }
 
+.layout-project-sp {
+    text-align: center;
+    font-size: 16px;
+    font-family: capitolium-2, serif;
+    height: 100%;
+    background-color: #d1dbff;
+}
+
+.layout-project-whrl {
+    text-align: center;
+    font-size: 16px;
+    font-family: capitolium-2, serif;
+    height: 100%;
+    background-color: #d1dbff;
+}
+
+.layout-project-ftc {
+    text-align: center;
+    font-size: 16px;
+    font-family: capitolium-2, serif;
+    height: 100%;
+    background-color: #d1dbff;
+}
+
 .site-header-portfolio {
     position: absolute;
     width: 100%;
@@ -936,4 +960,97 @@ p {
     height: 100%;
     background-color: #f2f2f2;
 }
+
+.grid-item-project-1 {
+    background-color: #f9f9f9;
+    padding-bottom: 100px;
+}
+
+.project-name {
+    color: #151211;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.26em;
+    font-weight: 800;
+    padding-top: 2.9vmin;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    top: 2px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.sp-project-header {
+    padding: 26px 15px;
+    background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-intro-header {
+        margin-top: -70px;
+        margin-bottom: 70px;
+    }
+}
+
+.project-intro-header {
+    font-weight: 400;
+    font-size: 64px;
+    font-family: capitolium-2, serif;
+    font-style: normal;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    animation-name: subBannerHeading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+}
+
+@keyframes subBannerHeading {
+    0% {transform: translateX(-50px); opacity: 0%;}
+    100% {transform: translateX(0); opacity: 100%;}
+}
+
+.hero-effect {
+
+}
+
+.sp-project-subheader {
+    padding: 26px 15px;
+    background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-intro-subheader {
+        margin-top: -70px;
+        margin-bottom: 70px;
+    }
+}
+
+.project-intro-subheader {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: capitolium-2, serif;
+    font-style: normal;
+    margin-bottom: 70px;
+}
+
+.project-item-text {
+    font-family: capitolium-2, serif;
+    text-align: left;
+    /* margin: 0 auto 60px; */
+    margin-left: 20px;
+    width: 80%;
+    z-index: 10;
+    max-width: 400px;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
 
