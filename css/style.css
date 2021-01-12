@@ -1207,6 +1207,13 @@ p {
     }
 }
 
+@media only screen and (max-width: 520px) {
+    .section-header-shrink {
+        font-size: 2.3em;
+        line-height: 1em;
+    }
+}
+
 .grid-item-image-less {
     flex: 1 25%;
     padding: 30px 50px 60px;
