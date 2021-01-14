@@ -1076,6 +1076,12 @@ p {
     -webkit-text-fill-color: transparent;
 }
 
+@media only screen and (min-width: 890px) {
+    .whrl-project-subheader {
+        padding: 26px 204px;
+    }
+}
+
 .walmart-project-subheader {
     padding: 26px 15px;
     /* background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%); */
@@ -1340,5 +1346,27 @@ p {
     .spark-vertical-align {
         width: 1em;
         height: 1em;
+    }
+}
+
+.video-header {
+    padding: 12px 5px;
+}
+
+@media only screen and (max-width: 639px) {
+    .video-header {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .video-header {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .video-header {
+        font-size: 2.5em;
     }
 }
