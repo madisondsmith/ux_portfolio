@@ -472,9 +472,9 @@ svg {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1000px) {
     .hero-name {
-        padding: 2vw 0;
+        line-height: 8vh;
     }
 }
 
@@ -482,7 +482,8 @@ svg {
     font-family: fredericka-the-greatest, serif;
     margin-top: 70px;
     margin-bottom: 70px;
-    /* font-size: calc(20px + 3.7vw); */
+    font-size: calc(20px + 8.46vw);
+    line-height: 14vh;
 
     animation-name: bannerHeading;
     animation-duration: 2s;
