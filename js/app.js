@@ -630,7 +630,7 @@ const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.
 anime({
   targets: '.wave-top > path',
   easing: 'linear',
-  duration: 7500,
+  duration: 5500,
   loop: true,
   d: [
     { value: [wave1, wave2] },
