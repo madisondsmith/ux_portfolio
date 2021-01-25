@@ -854,6 +854,12 @@ h2 {
     }
 }
 
+.grid-item-header-writing:hover {
+    background-color: #000000;
+    transform: scaleX(1.04);
+    color: #ffffff;
+}
+
 .grid-item-header-left {
     margin-top: 0;
     max-width: 440px;
