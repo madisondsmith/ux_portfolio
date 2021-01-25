@@ -96,17 +96,21 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     transition: translateZ(0);
 }
 
-.menu-active>.menu-icon-line-1, .menu-active:hover>.menu-icon-line-1 {
+.menu:hover>.menu-icon-line {
+    background-color: #00a4a6;
+}
+
+.menu-active>.menu-icon-line-1 {
     transform: translateY(6px) rotateZ(-135deg);
     background-color: #f9f9f9;
 }
 
-.menu-active>.menu-icon-line-2, .menu-active:hover>.menu-icon-line-2 {
+.menu-active>.menu-icon-line-2 {
     opacity: 0;
     background-color: #f9f9f9;
 }
 
-.menu-active>.menu-icon-line-3, .menu-active:hover>.menu-icon-line-3 {
+.menu-active>.menu-icon-line-3 {
     transform: translateY(-6px) rotateZ(135deg);
     background-color: #f9f9f9;
 }
@@ -245,6 +249,10 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
 }
 /* end site nav links landscape view queries */
 
+.nav-link:hover {
+    background-color: #00a4a6;
+}
+
 .nav-sublinks {
     font-family: capitolium-2, serif;
     font-size: 0.4em;
@@ -280,6 +288,7 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
 
 .site-name {
     font-size: 11px;
+    /* font-family: fredericka-the-greatest, serif; */
     text-transform: uppercase;
     letter-spacing: 0.26em;
     font-weight: 800;
@@ -289,6 +298,18 @@ html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code
     z-index: 1;
     top: 2px;
     position: relative;
+}
+
+.site-name:hover {
+    transform: scaleX(1.04);
+}
+
+.siteLogolink {
+    font-family: fredericka-the-greatest, serif;
+}
+
+.siteLogolink:hover {
+    color: #00a4a6;
 }
 
 h1 {
@@ -497,13 +518,6 @@ svg {
     100% {transform: translateY(0); opacity: 100%;}
 }
 
-@media only screen and (max-width: 500px) {
-    .portfolio-intro-header {
-        margin-top: -70px;
-        margin-bottom: 70px;
-    }
-}
-
 .portfolio-intro-header {
     font-weight: 400;
     font-size: 16px;
@@ -518,38 +532,17 @@ svg {
     transition-timing-function: linear;
 }
 
+@media only screen and (max-width: 500px) {
+    .portfolio-intro-header {
+        margin-top: -70px;
+        margin-bottom: 70px;
+    }
+}
+
 @keyframes subBannerHeading {
     0% {transform: translateX(-50px); opacity: 0%;}
     100% {transform: translateX(0); opacity: 100%;}
 }
-
-/*
-.rough-logo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-}
-
-@media only screen and (max-width: 600px) {
-    .rough-logo {
-        
-    }
-}
-
-.logo-background {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-.hero-sketch {
-    margin: 16px 16px;
-}
-*/
 
 h2 {
     display: block;
@@ -591,18 +584,10 @@ h2 {
 }
 
 #sp-header {
-    /* font-size: 56px; */
-    /* font-weight: 800; */
-    /* margin: 60px auto 0.65em; */
-    /* padding: 15px 15px; */
-    /* font-family: 'Courier New', Courier, monospace; */
     background: -webkit-linear-gradient(90deg, #c132ff, #3158ec 75%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    /* transition-property: transform; */
-    /* transition-duration: 0.5s; */
 }
 
 #whrl-header {
@@ -941,8 +926,66 @@ p {
     top: 0;
     left: 0;
     /* width: 100%; */
-    
   }
+
+  .grid-item-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #grid-btn {
+    font-size: 13px;
+    font-size: .875rem;
+    font-family: capitolium-2, serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 30px;
+    width: 80px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 50px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+#grid-btn:hover {
+    background-color: #00a4a6;
+    transform: scaleX(1.04);
+}
+
+.contact-card-button {
+    position: absolute;
+    z-index: 2004;
+    top: 0px;
+    right: 0px;
+}
+
+#contact-btn {
+    font-size: 13px;
+    font-size: .875rem;
+    font-family: capitolium-2, serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 30px;
+    width: 80px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 50px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+#contact-btn:hover {
+    background-color: #00a4a6;
+    transform: scaleX(1.04);
+}
 
 .contact-link {
     padding: 4px;
@@ -956,6 +999,11 @@ p {
     width: 30px;
     height: 30px;
     display: inline-block;
+}
+
+.contact-icon:hover {
+    background-color: #00a4a6;
+    border-radius: 20px;
 }
 
 .layout-writings {
