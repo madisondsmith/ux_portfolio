@@ -1453,3 +1453,55 @@ p {
     background-color: #00a4a6;
     transform: scaleX(1.04);
 }
+
+.grid-item-qr {
+    flex: 1 50%;
+    padding: 30px 50px 60px;
+    max-height: 500px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-item-qr {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-item-qr {
+        flex: 1 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-item-qr {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .grid-item-qr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.grid-item-qr-style {
+    color: #f1f1f1;
+    background-color: #815f33;
+    padding-bottom: 100px;
+}
+
+.qr-img {
+    background-color: transparent;
+    border: transparent;
+}
