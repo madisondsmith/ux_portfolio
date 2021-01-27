@@ -25,7 +25,8 @@ body {
     font-size: 16px;
     font-family: capitolium-2, serif;
     height: 100%;
-    background-color: #d1dbff;
+    /* background-color: #d1dbff; */
+    background-color: #f9f9f9;
 }
 
 .layout-project-whrl {
@@ -33,7 +34,8 @@ body {
     font-size: 16px;
     font-family: capitolium-2, serif;
     height: 100%;
-    background-color: #f5b12d;
+    /* background-color: #f5b12d; */
+    background-color: #f9f9f9;
 }
 
 .layout-project-walmart {
@@ -1026,7 +1028,14 @@ p {
 }
 
 .grid-item-project-1 {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: #d1dbff;
+    padding-bottom: 100px;
+}
+
+.grid-item-project-2 {
+    /* background-color: #f9f9f9; */
+    background-color: #f5b12d;
     padding-bottom: 100px;
 }
 
@@ -1192,7 +1201,8 @@ p {
     max-width: 70%;
     margin: 0 2em 2em;
     line-height: 3em;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    margin-top: -15px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1207,6 +1217,30 @@ p {
     .text-stretch {
         margin: 0 0 2em;
         font-size: 1rem;
+        line-height: 2em;
+    }
+}
+
+.text-stretch-header-left {
+    max-width: 70%;
+    margin: 0 2em 2em;
+    line-height: 3em;
+    /* font-size: 1.5rem; */
+    /* margin-top: -15px; */
+}
+
+@media only screen and (max-width: 900px) {
+    .text-stretch-header-left {
+        margin: 0 0 2em;
+        /* font-size: 1.5rem; */
+        line-height: 2em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .text-stretch-header-left {
+        margin: 0 0 2em;
+        /* font-size: 1rem; */
         line-height: 2em;
     }
 }
@@ -1226,6 +1260,7 @@ p {
 .grid-item-header-boots-project {
     font-size: 30px;
     font-weight: 700;
+    padding: 0px;
 }
 
 @media only screen and (max-width: 836px) {
@@ -1237,8 +1272,8 @@ p {
 .text-stretch-righthand-block-stretch {
     max-width: 70%;
     margin: 0 0 2em;
-    line-height: 3em;
-    font-size: 1.5rem;
+    /* line-height: 3em; */
+    /* font-size: 1.5rem; */
 }
 
 @media only screen and (max-width: 1038px) {
@@ -1514,4 +1549,8 @@ p {
     border: transparent;
     height: 500px;
     padding-top: 100px;
+}
+
+.wrap {
+    max-width: 70%;
 }
