@@ -803,7 +803,7 @@ h2 {
 
 @media only screen and (min-width: 801px) {
     .up-text {
-        margin-bottom: 110px;
+        margin-bottom: 120px;
     }
 }
 
@@ -962,6 +962,7 @@ p {
     color: #fff;
     font-weight: 700;
     white-space: nowrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
 #grid-btn:hover {
@@ -992,6 +993,7 @@ p {
     color: #fff;
     font-weight: 700;
     white-space: nowrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact-btn:hover {
@@ -1510,4 +1512,6 @@ p {
 .qr-img {
     background-color: transparent;
     border: transparent;
+    height: 500px;
+    padding-top: 100px;
 }
