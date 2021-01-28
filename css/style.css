@@ -1554,3 +1554,7 @@ p {
 .wrap {
     max-width: 70%;
 }
+
+.img-thumbnail:hover {
+    transform: scale(1.04);
+}
