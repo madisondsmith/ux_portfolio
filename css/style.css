@@ -1266,6 +1266,7 @@ p {
 @media only screen and (max-width: 836px) {
     .grid-item-header-boots-project {
         font-size: 1.25rem;
+        line-height: 1em;
     }
 }
 
@@ -1467,7 +1468,7 @@ p {
 
 @media only screen and (max-width: 375px) {
     .video-header {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
