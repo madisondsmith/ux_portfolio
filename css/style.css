@@ -1559,3 +1559,7 @@ p {
 .img-thumbnail:hover {
     transform: scale(1.04);
 }
+
+.size-reduction {
+    font-size: 1.2em;
+}
