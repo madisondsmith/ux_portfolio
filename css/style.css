@@ -1261,11 +1261,12 @@ p {
     font-size: 30px;
     font-weight: 700;
     padding: 0px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 836px) {
     .grid-item-header-boots-project {
-        font-size: 1.25rem;
+        font-size: 2rem;
         line-height: 1em;
     }
 }
