@@ -1564,3 +1564,9 @@ p {
     font-size: 1.2em;
     margin-right: -70px;
 }
+
+@media only screen and (max-width: 520px) {
+    #main-header-down-scale {
+        font-size: 9vw;
+    }
+}
