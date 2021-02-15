@@ -26,15 +26,20 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
     <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>seqrpay project | Responsive Web Design</title>
     <!-- Font family links -->
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -129,10 +134,7 @@
                 <div class="section project-sections">
                     <h1 class="project-name">responsive web design – Nov 2020</h1>
                     <h2 class="project-intro-header sp-project-header">seqrpay</h2>
-                    <div class="hero-image-project">
-                        <img class="hero-effect" src="images/sp-hero-image.png" alt="project hero image" style="width: 100%;">
-                    </div>
-                    <h3 class="project-intro-subheader sp-project-subheader">Users' comprehension of seqrpay improved by 75%.</h3>
+                    <h3 class="project-intro-subheader sp-project-subheader">User comprehension of seqrpay improved by 75%.</h3>
                     <div class="project-banner-content">
                         <img src="images/seqrpay-logo.png" alt="seqrpay logo" width="80" height="80">
                     </div>
@@ -141,384 +143,466 @@
         </div>
 
         <!-- project abstract and roles section -->
-        <div class="row px-5 py-5">
-            <div class="col-sm text-left">
-                <div class="text-stretch-header-left">
-                    <h3 class="section-header grid-item-header-boots-project">THE CLIENT.</h3>
-                </div>
-                <p class="text-stretch">
-                A startup, such as seqrpay, must optimize its time and the way it 
-                fails in order to succeed. In two and a half weeks, <strong>seqrpay 
-                needed a responsive website designed that could clearly inform 
-                millennials and small business owners about seqrpay.</strong> 
-                Our design team worked with stakeholders - identifying user needs
-                and their experiences - to design a responsive site ready for 
-                development.
-                </p>
-            </div>
-            <div class="col-sm-3">
-                <div class="col-xs-12">
-                    <div>
-                        <h3 class="section-header grid-item-header-boots-project text-left">WHAT I DID.</h3>
+        <!-- table of contents -->
+                <div class="row section">
+                    <div class="col s12 left-align">
+                        <h1 class="section-header">Table of Contents</h1>
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">face</i>1. The Client</div>
+                                <div class="collapsible-body left-align">
+                                    <span>Who we worked for, why we were needed, what was made, the problem, and the main objective.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-1-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">fingerprint</i>2. Key Artifacts</div>
+                                <div class="collapsible-body left-align">
+                                    <span>See artifacts that were key to developing the final solution and read about why
+                                    these methods were used in the first place.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-2-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">edit</i>3. Writing the Copy</div>
+                                <div class="collapsible-body left-align">
+                                    <span>I advocated for an emphasis on UX copy. Read why that was important for this project 
+                                    and where that led us in the design process.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-3-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">build</i>4. Site Architecture</div>
+                                <div class="collapsible-body left-align">
+                                    <span>Knowing what you are going to write and knowing what visuals to use is nothing if there is 
+                                        no sensible context. Read about questions we needed to answer at this point and see the structure that was developed.
+                                    </span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-4-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">compare</i>5. Fidelity Comparisons</div>
+                                <div class="collapsible-body left-align">
+                                    <span>I worked in Figma for all wireframing and prototyping. This section shows the 
+                                    progression from low to high fideity prototypes.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-5-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">beenhere</i>6. Outcome</div>
+                                <div class="collapsible-body left-align">
+                                    <span>A summation of the project and what came of this work.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-6-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                          </ul>
                     </div>
-                    <div class="row text-left pt-2">
-                        <p class="col text-stretch-righthand-block">
-                            User research and insights, writing site copy, information architecture, visual design, testing.
+                    
+                </div>
+
+                <!-- hero image -->
+                <div class="row section">
+                    <div class="hero-image-project">
+                        <img class="hero-effect" src="images/sp-hero-image.png" alt="project hero image" style="width: 100%;">
+                    </div>
+                    <!-- client section -->
+                    <div class="col s12 left-align">
+                        <a id="item-1-jump" href="#item-1-jump">
+                            <h1 class="section-header">The Client</h1>
+                        </a>
+                        <p class="flow-text">
+                            Our client was seqrpay – an Austin-based startup.
+                        </p>
+                        <p class="flow-text">
+                            In two and a half weeks, they
+                            needed a responsive website designed that could clearly inform 
+                            millennials and small business owners about seqrpay.
+                        </p>
+                        <p class="flow-text">
+                            Our design team worked with stakeholders - identifying user needs
+                            and their experiences - to design a responsive site ready for 
+                            development.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="row section">
+                    <div class="col s12 left-align">
+                            <h2 class="grid-item-header-boots-project">What I Did</h2>
+                            <p class="flow-text">
+                                Conducted user research, developed user insights, wrote and oversaw UX copy, sorted information architecture, 
+                                chose visual design elements, and conducted usability testing.
+                            </p>
+
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">pie_chart</i>The Team</div>
+                                    <div class="collapsible-body left-align">
+                                        <p class="flow-text">Brian Rainey – UX Designer</p>
+                                        <p class="flow-text">Carl Booker – UX Designer</p>
+                                        <p class="flow-text">Madison Smith – UX Designer</p>
+                                        <p class="flow-text">Monica Garza – UX Designer</p>
+                                        <p class="flow-text">Theresa Morgan – UX Designer</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>   
+                </div>
+
+                <!-- embedded site walkthrough -->
+                <div class="row section">
+                    <div class="col s12 left-align">
+                        <div>
+                            <h2 class="grid-item-header-boots-project">What We Made</h2>
+                        </div>
+                        <div class="video-container">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g_OLJjA35Xs" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- the problem -->
+                <div class="row section">
+                    <div class="col s12 left-align">
+                        <h3 class="grid-item-header-boots-project">The Problem</h3>
+                        <p class="flow-text">
+                            The life of a food truck vendor - of a small business owner - is punctuated by high transaction
+                            fees, incompatible ordering solutions, and fragmented payments. <strong>Target users had no way to learn 
+                            about how seqrpay solves this problem</strong> for both the small business and their guests. A solution is 
+                            nothing unless it can be understood. 
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <div>
-                        <h3 class="section-header grid-item-header-boots-project text-left">THE TEAM.</h3>
-                    </div>
-                    <div class="row pt-2 mt-3 text-left">
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Brian Rainey – UX Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Carl Booker – UX Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Madison Smith – UX Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Monica Garza – UX Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Theresa Morgan – UX Designer</p>
-                        </div>
+
+                <!-- the objective -->
+                <div class="row section">
+                    <div class="col s12 left-align">
+                        <h3 class="grid-item-header-boots-project">The Objective</h3>
+                        <p class="flow-text">
+                            We needed to make a prototype site in two weeks that would be reponsive across desktop and mobile. 
+                            The site would clearly convey seqrpay's solution. We also needed to be designing in a way that 
+                            would be optimal for structuring a design system 
+                            and in such a way that could be easily passed off to development.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
+                <!-- challenges -->
+                <div class="row section">
+                    <div class="col s12 left-align">
+                        <h3 class="grid-item-header-boots-project">Challenges & Approach</h3>
+                        <p class="flow-text">
+                            We had only two weeks to work 
+                            and schedules could not be coordinated between the design team and stakeholders. 
+                            We began with very little info about what exactly the site needed to convey.
+                            That is, all we really knew is that the solution would somehhow utilize QR 
+                            technology 
+                            and that it would primarily target food truck owners and millennials.
+                        </p>
+                        <p class="flow-text">
+                            Thus, we conducted a lot of secondary research and relied on our shared 
+                            experiences to fill in 
+                            the gaps.
+                            I Personally brought six years of experience in the Food & Service 
+                            Industry to inform food service operations and end-user needs. 
+                            While Monica's experience of having been an esthetician was also 
+                            helpful in understanding a small business perspective.
+                        </p>
+                        <p class="flow-text">
+                            Two distinct users that would be using the site were identifed: the food truck owner
+                            and the guest of the business; millenials. 
+                            Thus, we knew that proto-personas would be helpful artifacts to develop. 
+                        </p>
+                        <div class="material-placeholder col m6">
+                            <img class="responsive-img materialboxed" src="images/sp-proto-persona4.jpg" alt="seqrpay proto persona">
+                            <figcaption class="grey-text grid-item-text-fig">Black Bark BBQ represents our food truck or small business persona</figcaption>
+                        </div>
+                        <div class="material-placeholder col m6">
+                            <img class="responsive-img materialboxed" src="images/sp-jamie-proto-persona.jpg" alt="seqrpay proto persona">
+                            <figcaption class="grey-text grid-item-text-fig">Jamie represents our millennial or consumer persona</figcaption>
+                        </div>
+                        <div class="col s12">
+                            <p class="flow-text">
+                                We still did not know exactly what we were dealing with so we examined the full scope
+                                of the environment our two users were situated in and how they interacted typically.
+                                Heuristic and competitor analyses of direct and indirect competitors’ 
+                                websites and offerings were conducted as we began this sprint. Below depicts the hueristic 
+                                analysis I performed of a design agency's website as inspiration for what our own site might 
+                                look and feel like.
+                            </p>
+                        </div>
+                        <div class="material-placeholder">
+                            <img class="responsive-img materialboxed" src="images/sp-heuristic2.jpg" alt="heuristic analysis">
+                            <figcaption class="grey-text grid-item-text-fig">This site made great use of flow and how copy was displayed.
+                                This was important considering an assumption was that words and ability to 
+                                navigate easily would be critical to the site's success.
+                            </figcaption>
+                        </div>
+                        <p class="flow-text">
+                            The beginning of this project felt, admittedly, a bit sporadic. The team was doing everything possible to fill in gaps 
+                            and get the full picture without ever knowing whether or not we were really headed in the right direction. 
+                            Artifacts that were developed were critical to that direction and ultimately led us exactly where we needed to be 
+                            once we were able to meet with stakeholders. 
+                            
+                        </p>
+                    </div>
+                </div>
 
-        <!-- embedded site walkthrough -->
-        <div class="row px-5 py-5">
-            <div class="col">
-                <div>
-                    <h2 class="section-header video-header">What we made.</h2>
-                </div>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g_OLJjA35Xs" allowfullscreen></iframe>
-                </div>
+        <!-- key artifact section -->
+        <div class="row section grid-items">
+            <div class="col s12 left-align">
+                <a id="item-2-jump" href="#item-2-jump">
+                    <h1 class="section-header">Key Artifacts</h1>
+                </a>
             </div>
-        </div>
-
-        <!-- the problem -->
-        <div class="row px-5 py-3">
-            <div class="col-lg text-left">
-                <div class="pb-4">
-                    <h3 class="section-header grid-item-header-boots-project text-left">THE PROBLEM.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col text-stretch-righthand-block-stretch">
-                        The life of a food truck vendor - of a small business owner - is punctuated by high transaction
-                        fees, incompatible ordering solutions, and fragmented payments. <strong>Target users had no way to learn 
-                        about how seqrpay solves this problem</strong> for both the small business and their guests. A solution is 
-                        nothing unless it can be understood. 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <div class="text-stretch-mid-right-block">
-                    <h3 class="section-header grid-item-header-boots-project">OBJECTIVE.</h3>
-                </div>
-                <p class="text-stretch-mid-right-block">
-                    <strong>We needed to make a desktop and mobile site</strong> but were provided only a target user and a vague idea of the solution 
-                    being offered; that it would have QR tech at its center.
-                    Schedules could not be coordinated bewteen design and stakeholders for the first week of this project.
-                </p>
-                <p class="text-stretch-mid-right-block">
-                    <strong>Because we knew little about QR codes, millennials, and the digital wallet environment,
-                    the process began by deeply researching these core aspects and how they interact.</strong>
-                    I personally have six years of experience in the Food & Service Industry which helped to focus research efforts. 
-                    Monica's experience of having been an esthetician was also helpful in understanding a small business perspective.
-                </p>
-                <p class="text-stretch-mid-right-block">
-                    There were two distinct users that would be using the site: the small business owner
-                    and the guest of the business; millenials. Thus, <strong>we chose to create two proto personas.</strong> 
-                    We then conducted heuristic analyses and general competitor analyses of direct and indirect competitors’ 
-                    websites and offerings because we needed to understand
-                    how these two users function in similar, existing point-of-sale spaces.
-                <p class="text-stretch-mid-right-block"> 
-                    Now that we had a clear point-of-departure, we needed to begin empathizing with our users. 
-                    Due to my understanding of the industry, inability to coordinate schedules with stakeholders
-                    and time contraints of the project, we began immediately developing insights based on research and the 
-                    experience of the team members. These insights were needed in order understand what users would be
-                    looking for in a site offering a point-of-sale solution
-                <!-- 
-                <p class="text-stretch-mid-right-block">
-                    Thus, <strong>preliminary copy was written and tested</strong> with two managers of an established 
-                    fine-dining restaurant in downtown Austin, TX. These users tests - plus supplemental customer needs 
-                    research from seqrpay startup stakeholders - allowed our design team to understand the language and 
-                    needs of the user by way of affinity mapping. <strong>Affinity mapping yielded the following themes: control 
-                    and flexibility, fears of mobile point-of-sale systems, security, staff and workflow needs, merchant 
-                    needs, and payment processing needs.</strong> Empowered by these insights, grounded in our user-personas and 
-                    research, we then needed to hypothesize what kind of site seqrpay and its users needed and well as 
-                    the language they spoke. 
-                </p>
-                 -->
-            </div>
-        </div>
-
-        <!-- grid artifact section -->
-        <div class="section grid-items ">
-            <h2 class="section-header video-header">The Artifacts.</h2>
             <div class="grid-item-image grid-item-wide grid-item-img-1">
-                <img src="images/sp-proto-persona.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    Using a <strong>Proto-persona</strong> for the Small-business was important to this project so as to keep track 
-                    of our primary target's needs. Their day-to-day experiences would inform what they need from seqrpay's website.
+                <img src="images/sp-storyboard2.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    A storyboard was useful for visualizing a potential
+                    interaction between our users. Especially since we were still unsure of exactly what they would be interacting with.
                 </p>
             </div>
 
             <div class="grid-item-image grid-item-wide grid-item-img-1">
-                <img src="images/sp-storyboard.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    Because we had two users to understand, a <strong>storyboard</strong> was useful for capturing an example of what their 
-                    interaction might look like.
-                    Doing this would help to uncover pains that might otherwise be unbeknownst to both users at the moment of their interaction.
+                <img src="images/sp-insight-01.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    Deductive ideation using key words identifed during research helped to extrude the essence of what seqrpay would communicate.
                 </p>
             </div>
 
             <div class="grid-item-image grid-item-wide grid-item-img-1">
-                <img src="images/sp-insight-01.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    <strong>Deductive ideation</strong> – which was based in core themes identified from primary and secondary research – was utilized
-                    in order to better flesh out the idea in words of what we needed to capture with the would-be website.
+                <img src="images/sp-sketch2.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    Sketches were used to visualize what possible pages could look like as we planned to move into the structure of the site.
                 </p>
             </div>
 
             <div class="grid-item-image grid-item-wide grid-item-img-1">
-                <img src="images/sp-sketch-01.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    <strong>Sketching</strong> was helpful in order to see what possible pages could look like.
-                </p>
-            </div>
-
-            <div class="grid-item-image grid-item-wide grid-item-img-1">
-                <img src="images/sp-heuristic-flow.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    We wanted to explore solutions outside of the obvious. Conducting <strong>hueristic analyses</strong> of gaming and UX agency
-                    websites helped develop our understanding of what we needed to include in our own site. 
-                    This also allowed us to quickly make low-fidelity protoytpes concurrent other process efforts. 
+                <img src="images/sp-mood-board.jpg" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    Moodboards were developed by each team member throughout the entire design process. This board represents the synthesis of 
+                    all our boards. A moodboard might not have been used had we been able to meet with stakeholders from the offset. 
                 </p>
             </div>
         </div>
 
-        <!-- writing the copy section -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">WRITING THE COPY.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        At this point, the central focus of this project was clear: consicely conveying seqrpay’s solution. 
-                        We hypothesized that, if we could do this effectively, the other arguable 
-                        foci – adoptability, comprehension, garnering trust, 
-                        images displayed on the site, accents of color – would all follow suit. 
-                        So, <strong>in a word, the focus of this project was...words.</strong>
-                        <br>
-                        <br>
-                        We found word choice surrounding mobile point-of-sale systems in the service industry to be very 
-                        polarizing. One challenge we were facing was the damage that early mobile point of sale systems 
-                        had done. <strong>This provided further proof that site copy needed to be recieved well by our users.</strong>
-                    </p>
-                </div>
+        <!-- writing the copy -->
+        <div class="row section">
+            <div class="col s12">
+                <a id="item-3-jump" href="#item-3-jump">
+                    <h1 class="section-header">Writing the Copy</h1>
+                </a>
             </div>
-            <div class="col-sm">
+            <div class="col s12 m6 l6">
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    At this point we had been able to meet with stakeholders and could finally begin fleshing out 
+                    specifics and working towards the main objective: consicely conveying seqrpay’s solution, first, with the copy. 
+                </p>
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    We hypothesized that, if we could do this effectively, the other arguable 
+                    foci – adoptability, comprehension, garnering trust, 
+                    images displayed on the site, CTA colors, etc. – would all follow suit. 
+                    So, in a word, the focus of this project was...words.
+                </p>
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    We found word choice surrounding mobile point-of-sale systems in the service industry to be very 
+                    polarizing. One challenge we were facing was the damage that early mobile point of sale systems 
+                    had done. This provided further proof that site copy needed to be recieved well by our users.
+                </p>
+            </div>
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-1">
-                    <img src="images/sp-mobile-views.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/sp-mobile-views.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                     <p class="grid-item-text grid-item-text-1">
-                        UX copy on mobile viewport
+                        UX copy as viewed on mobile.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- understanding at a glance -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-sm">
+        <!-- readability -->
+        <div class="row section">
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-1">
-                    <img src="images/sp-at-a-glance.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/sp-at-a-glance.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                     <p class="grid-item-text grid-item-text-1">
-                        Copy-derived UI
+                        UX copy as viewed on mobile.
                     </p>
                 </div>
             </div>
-            <div class="col-lg text-left">
-                <div class="pt-2">
-                    <h3 class="section-header grid-item-header-boots-project text-left">AT-A-GLANCE.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        <strong>Users needed to grasp an understanding of seqrpay at-a-glance otherwise we'd lose them.</strong>
-                        Having a firm grasp on the site’s language and how visitors would understand that language
-                        made it easy to use the words to inform visual design decisions – UI elements such as illustrations and images to 
-                        convey meaning – for those that might simply skim a site. 
-                    </p>
-                </div>
+            <div class="col s12 m6 l6">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Readability</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    Users needed to be able to grasp an understanding of seqrpay at-a-glance. Otherwise, we'd lose them.
+                    Having a firm grasp on UX copy, deciding how to visually convey the solution through UI 
+                    was made that much easier. The aim was for UI to reflect copy.
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    Confident of the discerning reader being satiated though site copy, the 
+                    resulting UI would ensure the site's ability to 
+                    capture the user that is more keen on visual elements than written content.
+                </p>
             </div>
         </div>
 
-        <!-- how it works -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-sm">
+        <!-- architecture section -->
+        <div class="row section">
+            <!-- section header -->
+            <div class="col s12 left-align">
+                <a id="item-4-jump" href="#item-4-jump">
+                    <h1 class="section-header">Site Architecture</h1>
+                </a>
+                <p class="flow-text">
+                    With copy and UI elements becoming more concrete, we needed to decide exactly where they would go; we needed 
+                    to figure out the architechure of information.
+                </p>
+                <p class="flow-text">
+                    Some key questions we needed to answer: 
+                    How many pages would we need? Does the functionality of the solution imply the need for a consumer portal on the site?
+                    Who will the primary visitor of the site be of our two users? Small business or consumer?
+                </p>
+                <p class="flow-text">
+                    Card Sorting would help to answer these questions as well as providing the structure. This would be a critical 
+                    step too. Just like the copy, if it was not right, users would get lost, confused, or lose interest in learning about seqrpay. 
+                    If they were not able to navigate through the site in a dynamic, yet, funneled way, we could lose potential 
+                    customers to competitor sites.
+                </p>
+            </div>
+            <!-- section image -->
+            <div class="hero-image-project">
+                <img class="responsive-img materialboxed" src="images/sp-ia.jpg" alt="project hero image" style="width: 100%;">
+            </div>
+        </div>
+
+        <!-- how it works section -->
+        <div class="row section">
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-1">
-                    <img src="images/how-it-works.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/how-it-works.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                     <p class="grid-item-text grid-item-text-1">
-                        The "How it works" page itself
+                        ###
                     </p>
                 </div>
             </div>
-            <div class="col-lg text-left">
-                <div class="pt-2">
-                    <h3 class="section-header grid-item-header-boots-project text-left">HOW IT WORKS.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block-stretch">
-                        <strong>Identified from heuristic and competitor analyses</strong>, this type of page was frequently utilized. 
-                        Without this page and without decisive copy thereon, we would have an incomplete site, and thus, 
-                        would be putting seqrpay at risk of being misunderstood. 
-                        User tests of this page revealed it was useful for understanding seqrpay's solution 
-                        that seqrpay could offer. I formulated  UX insights of the business and of their guests 
-                        that informed the copy used on this page. 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- architecture -->
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <h3 class="section-header grid-item-header-boots-project text-stretch-mid-right-block-header">SITE ARCHITECTURE.</h3>
-                <p class="text-stretch-mid-right-block">
-                    We now needed to structure all of this information.
-                    To do this, <strong>we used card sorting</strong>. Sorting showed that
-                    our navigation would need to include the logo as a home button, an about us page, a business page, a 
-                    consumer page, a how it works page, a login page, and a sign up page. Now we knew what the site would look like. 
+            <div class="col s12 m6 l6">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">A Key Page</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    The "How it works" page, identified from earlier heuristic and competitor analyses, was noted as frequently utilized and key to user 
+                    comprehension. 
+                    Without this page we would have an incomplete site and confused users 
+                    Later user tests would confirm that this page was useful for understanding seqrpay. 
                 </p>
-                <p class="text-stretch-mid-right-block">
-                    In order to test our decisions with potential users,
-                    <strong>Thirteen one-on-one interviews and more than 25, five-second A/B tests were conducted.</strong>  
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Testing</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    With structure in place and filled copy and UI we needed to test the full solution. 
+                    Earlier in the process we had conducted comprehension testing of individual pages at lower fidelity levels.
+                    This is how we were able to perfect the copy as well as gain insights towards how that copy could inform UI.
+                    This round of testing focused on the fully-linked, high-fidelity prototype which I'd put together using Figma.
                 </p>
-
-                <h3 class="section-header grid-item-header-boots-project text-stretch-mid-right-block-header">TESTING DECISIONS.</h3>
-                <p class="text-stretch-mid-right-block">
-                    Testing revealed that <strong>users’ comprehension 
-                    of seqrpay improved by 75%</strong>. Before, it was taking as long as one minute for users to comprehend seqrpay.
-                    With our design, we got this down to 15 seconds.
-                    This was metric for success being that 15 seconds is the statistical amount of time a user will decide to continue reading 
+                <p class="text-stretch-righthand-block left-align">
+                    We would focus on testing small business owners. They were revealed as the primary user of 
+                    our two possible end-users.
+                </p>
+                <p class="text-stretch-righthand-block left-align"> 
+                    We were extatic to see results indicating that user comprehension 
+                    of seqrpay had improved by 75%. Previously, it was taking as long as one minute for users to comprehend seqrpay.
+                    In other words, we got time-to-comprehend down to 15 seconds.
+                    This was the chosen metric for success being that 15 seconds is the statistical amount of time a 
+                    user will decide to continue reading 
                     or not. 
                 </p>
-
-                <h3 class="section-header grid-item-header-boots-project text-stretch-mid-right-block-header">ITERATING.</h3>
-                <p class="text-stretch-mid-right-block">
-                    Though we improved comprehension, <strong>there were still some opportunities to improve copy and the overall design.</strong>
-                    Iterating based on test results would allow us to develop high-fidelity prototypes of all the site pages for desktop
-                    and mobile.
-                </p>
             </div>
         </div>
 
-        <!-- iterations
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">ITERATING.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        Though we improved comprehension, <strong>there were still some opportunities to improve copy and the overall design.</strong>
-                        Iterating based on test results would allow us to develop high-fidelity prototypes of all the site pages for desktop
-                        and mobile.
-                    </p>
-                </div>
+        <div class="row section">
+            <div class="col s12 left-align">
+                <!-- fidelity comparison -->
+                <a id="item-5-jump" href="#item-5-jump">
+                    <h1 class="section-header">Fidelity Comparisons</h1>
+                </a>
             </div>
-            <div class="col-sm">
-                <div class="grid-item-image grid-item-wide grid-item-img-1">
-                    <img src="images/sp-copy-iteration-artifact-01.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                    <p class="grid-item-text grid-item-text-1">
-                        Team's iterations on page copy
-                    </p>
-                </div>
-            </div>
-        </div>
-        -->
-
-        <!-- personal contribution to iterations
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-mid-right-block">
-                        <strong>It was my responsibility to write much of the core copy and to conduct revisions of 
-                        copy provided by team memebers.</strong> This endured for cohesive message and voice across the site. 
-                        This role helped develop the most comprehensive and precise message for communicationg
-                        seqrpay's solution to visitors of their site.
-                        The dynamic of leading tasks while also incorporating team suggestions was key to our
-                        success as a team.
-                        <br>
-                        <br>
-                        Preliminary UI decisions were made in the same way. 
-                        For example, during the mood boarding process, each member created a board and then 
-                        we voted on elements of each board that we then compiled into a single, 
-                        synthesized mood board.
-                        <br>
-                        <br>
-                        For sketching, each member sketched their vision for the site and we voted 
-                        again on how we would proceed. After the intial votes for sketching, 
-                        testing and statstics would inform iterations and decisions leading to 
-                        the final high-fidelity site prototype.
-                    </p>
-                </div>
-            </div>
-         -->
-
-            <!-- fidelity comparison -->
-            <div class="section grid-items">
-                <h2 class="section-header section-header-shrink video-header">Fidelity Comparisons.</h2>
-                <div class="grid-item-image-less grid-item-wide grid-item-img-1">
-                    <p class="grid-item-text grid-item-text-1">
+            <div class="col s12 grid-item-wide grid-item-img-1">
+                <div class="col s12 m4 l4">
+                    <p class="grid-item-text grid-item-text-1 center-align">
                         Low-fi
                     </p>
-                    <img src="images/sp-lo-fi.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/sp-lo-fi.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                 </div>
-
-                <div class="grid-item-image-less grid-item-wide grid-item-img-1">
-                    <p class="grid-item-text grid-item-text-1">
-                        Low-to-Mid
+                <div class="col s12 m4 l4">
+                    <p class="grid-item-text grid-item-text-1 center-align">
+                        Mid-fi
                     </p>
-                    <img src="images/sp-lo-to-mid-fi.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/sp-lo-to-mid-fi.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                 </div>
-                <div class="grid-item-image-less grid-item-wide grid-item-img-1">
-                    <p class="grid-item-text grid-item-text-1">
+                <div class="col s12 m4 l4">
+                    <p class="grid-item-text grid-item-text-1 center-align">
                         High-fi (Final)
                     </p>
-                    <img src="images/sp-hi-fi-final.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/sp-hi-fi-final.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                 </div>
             </div>
         </div>
 
         <!-- outcome -->
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <h3 class="section-header grid-item-header-boots-project text-left text-stretch-mid-right-block-header">OUTCOME.</h3>
-                <p class="text-stretch-mid-right-block">
+        <div class="row section">
+            <!-- section header -->
+            <div class="col s12 left-align">
+                <a id="item-6-jump" href="#item-6-jump">
+                    <h1 class="section-header">Outcome</h1>
+                </a>
+                <p class="flow-text">
                     This was a an extremely exciting and fun project for me to work on as it provided real 
                     experience working with stakeholders on something they really cared about and had already been
-                    working very hard on. It involved a ton of research, and detailed design work. However, 
-                    designing for multiple user types – small business owner and consumer – was a constant challenge. 
-                    Not to mention keeping in mind that we were not developing a soltuion, but instead, we were trying
+                    working very hard on.
+                </p>
+                <p class="flow-text">
+                    It involved myriad research resulting in a fun, infomative, and dynamic design. However, 
+                    designing for multiple user types – small business owner and consumer – was a constant challenge.  
+                    Not to mention inital lack of scope and keeping in mind that we were not developing a solution, but instead, we were trying
                     to convey that solution and best organize the exploration of that solution for the two users.
-                    Still, because of the incredible team we had, it was managable. Even though we were on a very tight 
-                    schedule and we had to spend a lot of time in research and ideation. 
-                    Because of our work and dedication to the design thinking process, 
-                    we successfully handed off a final product that we knew would convey seqrpay's solution, meet 
+                    Still, because of the balanced team we had, it was managable.
+                </p>
+                <p class="flow-text">
+                    Though we were on a very tight 
+                    deadline and we had to spend a lot of time in research and ideation, 
+                    we successfully handed off a final product that we knew would clearly convey seqrpay's solution, meet 
                     their user's needs, and that exceeded stakeholder expectations.
+                </p>
+                <p class="flow-text">
+                    Moving forward, we would would test the live site for usability and begin to do research with actual food trucks 
+                    who had been using seqrpay's point-of-sale system. Assessing the confluence of site and actual product would guide us 
+                    in seeing where improvements needed to be made regarding the product, how that might affect the site, and where the site 
+                    might be lacking strickly from a design perspective.
                 </p>
             </div>
         </div>
@@ -526,7 +610,7 @@
 
     <!-- next writing/project section  -->
 <div class="section grid-items">
-    <h2 class="section-header video-header">Next.</h2>
+    <h2 class="section-header">Next</h2>
 
     <a href="project-page-2.html" class="grid-item post-preview" style="background-color: #f5b12d;">
         <h1 class="grid-item-header" style="color: rgba(0, 0, 0, 1);">WHIRL Case Study</h1>
@@ -550,9 +634,29 @@
 </div>
 <!-- end 'next writing/project' div -->
 
-        <!-- JS and ANIME.MIN SCRIPTS BELOW -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+
+    <script>
+        $(document).ready(function() {
+    $('.collapsible').collapsible();
+    })
+
+    </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JS and ANIME.MIN SCRIPTS BELOW -->
     <script src="js/anime.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>   
+    <script type="text/javascript" src="js/app.js"></script>  
 
 </body>
 </html>
