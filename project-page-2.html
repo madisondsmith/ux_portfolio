@@ -26,15 +26,20 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
     <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Whirl case study | App Design</title>
     <!-- Font family links -->
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
     <link rel="stylesheet" href="https://use.typekit.net/lgy2yxc.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" href="icons/mds-logo-vertical-white.svg">
@@ -132,9 +137,6 @@
                 <div class="section project-sections">
                     <h1 class="project-name">app design – Aug 2020</h1>
                     <h2 class="project-intro-header whrl-project-header">WHIRL</h2>
-                    <div class="hero-image-project">
-                        <img class="whrl-hero-effect" src="images/whrl-hero-mockup.png" alt="project hero image">
-                    </div>
                     <h3 class="project-intro-subheader whrl-project-subheader">
                         Users can meet others in a safe environment, building trust from genuine first contact, 
                         that leads to lasting friendships.
@@ -147,418 +149,530 @@
         </div>
 
         <!-- project abstract and roles section -->
-        <div class="row px-5 py-5">
-            <div class="col-sm text-left">
-                <div class="text-stretch-header-left">
-                    <h3 class="section-header grid-item-header-boots-project">OBJECTIVE.</h3>
-                </div>
-                <p class="text-stretch">
-                For this particular project
-                it started with brainstorming from each member's personal perspective.
-                The mission? <strong>To design a mobile app that solves a real need in 
-                a person's day-to-day life.</strong>
-                In 3 weeks, our team needed to conduct <strong>user research, define the problem, 
-                ideate solutions, prototype the potential solution, and then test that solution
-                with users and iterate based on user feedback.</strong>
-                </p>
-
-                <div class="text-stretch-header-left">
-                    <h3 class="section-header grid-item-header-boots-project">PROBLEM STATEMENT.</h3>
-                </div>
-                <p class="text-stretch">
-                    "People looking for companionship need a trustworthy way of meeting real people online, 
-                    because it is hard to make sure that an online connection will grow into an in-person 
-                    friendship."
-                </p>
-            </div>
-            <div class="col-sm-3">
-                <div class="col-xs-12">
-                    <div>
-                        <h3 class="section-header grid-item-header-boots-project text-left">WHAT I DID.</h3>
-                    </div>
-                    <div class="row text-left pt-2">
-                        <p class="col text-stretch-righthand-block">
-                            User interviews, wrtiting interview plans, user surveys, 
-                            develop problem statement, ideation methodology, feature prioritization, 
-                            value proposition statement, sketching, data synthesis, prototyping, and writing 
-                            presentation script.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div>
-                        <h3 class="section-header grid-item-header-boots-project text-left">THE TEAM.</h3>
-                    </div>
-                    <div class="row pt-2 mt-3 text-left">
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Annie Szarmach – UX & Visual Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Carl Booker – UX Designer</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Chip Perkins – UX Researcher</p>
-                        </div>
-                        <div class="row-sm nav-category">
-                            <p class="pl-3">Madison Smith – UX Researcher</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- table of contents -->
+        <div class="row section">
+            <div class="col s12 left-align">
+                <h1 id="main-header-down-scale" class="section-header">Table of Contents</h1>
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">map</i>1. The Mission</div>
+                                <div class="collapsible-body left-align">
+                                    <span>The purpose of this project, what was made, the problem, our hypothesis, and the inital approach.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-1-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">fingerprint</i>2. Key Artifacts</div>
+                                <div class="collapsible-body left-align">
+                                    <span>See artifacts that were key to developing the final solution and read about why
+                                    these methods were used in the first place.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-2-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">nature_people</i>3. User Insights</div>
+                                <div class="collapsible-body left-align">
+                                    <span>
+                                        The themes we were able to devine from synthesizing research and how that would inform solution development.
+                                    </span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-3-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">important_devices</i>4. Whirl's Value</div>
+                                <div class="collapsible-body left-align">
+                                    <span>
+                                        How I went about assessing the value of what we were creating. Would Whirl's solutions truly benefit users 
+                                        the way we thought?
+                                        If so, how?
+                                    </span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-4-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">gesture</i>5. Usability</div>
+                                <div class="collapsible-body left-align">
+                                    <span>
+                                        Before putting together a prototype of the app, it was necessary to verify all paths a user might take while using 
+                                        the app. Read about what those flows were and which were core to testing user success.
+                                    </span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-5-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">compare</i>6. Fidelity Comparisons</div>
+                                <div class="collapsible-body left-align">
+                                    <span>I worked in Adobe XD for all wireframing. This section shows the 
+                                        progression from low to high fidelity prototypes.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-6-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">beenhere</i>7. Outcome</div>
+                                <div class="collapsible-body left-align">
+                                    <span>A summation of the project and what came of this work.</span>
+                                    <!-- jump to button -->
+                                    <div>
+                                        <a href="#item-6-jump">
+                                            <button class="btn">Jump to section</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                          </ul>
             </div>
         </div>
 
+        <div class="row section">
+            <!-- hero image -->
+        <div class="hero-image-project">
+            <img class="whrl-hero-effect" src="images/whrl-hero-mockup.png" alt="project hero image">
+        </div>
+        <!-- the mission section -->
+        <div class="col s12 left-align">
+            <a id="item-1-jump" href="#item-1-jump">
+                <h1 class="section-header">The Mission</h1>
+            </a>
+            <p class="flow-text">
+                For this particular project
+                it started with brainstorming from each member's personal perspective.
+                The mission? To design a mobile app that solves a real need in 
+                a person's day-to-day life.
+            </p>
+            <p class="flow-text">
+                In 3 weeks, our team needed to conduct user research, define the problem, 
+                ideate solutions, prototype the potential solution, and then test that solution
+                with users and iterate based on user feedback.
+            </p>
+        </div>
+        </div>
+        
+        <div class="row section">
+            <div class="col s12 left-align">
+                    <h2 class="grid-item-header-boots-project">What I Did</h2>
+                    <p class="flow-text">
+                        conducted user interviews, wrote interview plans, created and analyzed user surveys, 
+                        developed problem statement, utilized ideation methodology, feature prioritization, 
+                        developed value proposition statement and canvas, sketched, prototyping, and wrote 
+                        presentation script.
+                    </p>
+
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">pie_chart</i>The Team</div>
+                            <div class="collapsible-body left-align">
+                                <p class="flow-text">Annie Szarmach – UX Researcher & Designer</p>
+                                <p class="flow-text">Carl Booker – UX Researcher & Designer</p>
+                                <p class="flow-text">Chip Perkins – UX Researcher & Designer</p>
+                                <p class="flow-text">Madison Smith – UX Researcher & Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+            </div>   
+        </div>
+
         <!-- embedded site walkthrough -->
-        <div class="row px-5 py-5">
-            <div class="col">
+        <div class="row section">
+            <div class="col s12 left-align">
                 <div>
-                    <h2 class="section-header video-header">What we made.</h2>
+                    <h2 class="grid-item-header-boots-project">What we made.</h2>
                 </div>
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="video-container">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fHDzYuhjI3s" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
-        <!-- the problem/ UX hypothesis -->
-        <div class="row px-5 py-3">
-            <div class="col-lg text-left">
-                <div class="pb-4">
-                    <h3 class="section-header grid-item-header-boots-project text-left">UX HYPOTHESIS & RESEARCH.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col text-stretch-righthand-block-stretch">
-                        In today’s landscape of social media, dating apps, and cultural pressures, 
-                        it can be challenging to find the time to meet authentic people that turn 
-                        into genuine friends. Why can’t it be like when we were kids? When we could 
-                        walk up to someone, ask if they would be our friend, and boom, we’re playing 
-                        on the playground? 
-                    </p>
-                </div>
+        <!-- the problem -->
+        <div class="row section">
+            <div class="col s12 left-align">
+                <h3 class="grid-item-header-boots-project">The Problem</h3>
+                <p class="flow-text">
+                    People looking for companionship need a trustworthy way of meeting real people online, 
+                    because it is hard to make sure that an online connection will grow into an in-person 
+                    friendship.
+                </p>
             </div>
         </div>
 
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <div class="text-stretch-mid-right-block">
-                    <h3 class="section-header grid-item-header-boots-project">DIRECTION.</h3>
-                </div>
-                <p class="text-stretch-mid-right-block">
-                    First and foremost, <strong>we started gathering data from six interviews and a survey.</strong>
+        <!-- ux hypothesis -->
+        <div class="row section">
+            <div class="col s12 left-align">
+                <h3 class="grid-item-header-boots-project">UX Hypothesis</h3>
+                <p class="flow-text">
+                    In today’s landscape of social media, dating apps, and cultural pressures, 
+                    it can be challenging to find the time to meet authentic people that turn 
+                    into genuine friends. Why can’t it be like when we were kids? When we could 
+                    walk up to someone, ask if they would be our friend, and boom, we’re playing 
+                    on the playground?
+                </p>
+            </div>
+        </div>
+
+        <!-- challenges -->
+        <div class="row section">
+            <div class="col s12 left-align">
+                <h3 class="grid-item-header-boots-project">The Approach</h3>
+                <p class="flow-text">
+                    First and foremost, we started by learing about our users. 
+                    This was done by conducting six user interviews and sending out a survey about how people make new friends.
+                </p>
+                <p class="flow-text">
                     We did this because we wanted to understand
                     how people make connections today, what drives them to form friendships, and what tools
-                    they use to maintain and grow these friendships. By having answers to these questions we
-                    might help otherwise lonely individuals meet another – leading to a lasting friendship.
+                    they use to maintain and grow these friendships.
                 </p>
-                <p class="text-stretch-mid-right-block">
-                    From litening to six people's stories and reading responses from 68 respondants 
-                    to our 20 question survey, <strong>we found that a lot of adults 
-                    (77.9% of respondants were age 21-28) really struggle to form friendships</strong> –
-                    especially when doing so online. Digital friend-finding apps saw spikes in use 
-                    with the advent of COVID-19. <strong>Competitors, like Bumble, had seen a 25% 
-                    increase in usage.</strong>
+                <p class="flow-text">
+                    From hearing from our six interviewees and reading responses from our 68 respondants 
+                    to our 20 question survey, we found that a lot of adults 
+                    (77.9% of respondants were age 21-28) really struggle to form friendships –
+                    especially when doing so online.
+                </p>
+                <div class="material-placeholder col m6">
+                    <img class="responsive-img materialboxed" src="images/whrl-interviewee-artifact-01.png" alt="seqrpay proto persona">
+                    <figcaption class="grey-text grid-item-text-fig">Some key, quiding quotes from interviewees.</figcaption>
+                </div>
+                <div class="material-placeholder col m6">
+                    <img class="responsive-img materialboxed" src="images/whrl-survey-results.png" alt="seqrpay proto persona">
+                    <figcaption class="grey-text grid-item-text-fig">
+                        63% of our respondants had never found a relationship
+                        through a social app or site. 44.8% indicated that the hardest parts of these apps 
+                        were related to the beginning moments of meeting someone for 
+                        the first time.</figcaption>
+                </div>
+                <p class="flow-text">
+                    We also took this time to conduct SWOT analyses 
+                    of our direct and inderect competitors: Bumble BFF, Meetup, Friender, Snapchat, 
+                    Tinder, Hinge, the nudge, and Peanut. 
+                    Specifically relevant, while learning about our biggest competitor Bumble BFF, 
+                    it was found that digital friend-finding apps saw spikes in use 
+                    with the advent of COVID-19. Bumble had seen a 25% 
+                    increase in usage. This let us know there was certainly a need for our product.
+                </p>
+                <!-- swot of competitors -->
+                <div class="material-placeholder col m12">
+                    <img class="responsive-img materialboxed" src="images/whrl-bumble-bff-swot.jpg" alt="seqrpay proto persona">
+                    <figcaption class="grey-text grid-item-text-fig">Bumble BFF SWOT analysis.</figcaption>
+                </div>
+                <p class="flow-text">
+                    We had learned a great deal from interviews, surveys, and secondary research. We now needed to make 
+                    some sense of it all. Wanting to identify trends from our user research information sepcifically, 
+                    the following artifacts were developed. We also began challenging our hypothesis.
                 </p>
             </div>
         </div>
 
-        <!-- grid artifact section -->
-        <div class="section grid-items ">
-            <h2 class="section-header video-header">The Artifacts.</h2>
+        <!-- key artifact section -->
+        <div class="row section grid-items">
+            <div class="col s12 left-align">
+                <a id="item-2-jump" href="#item-2-jump">
+                    <h1 class="section-header">Key Artifacts</h1>
+                </a>
+            </div>
             <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-survey-results.png" alt="diagrams of survey results" class="img-fluid img-thumbnail">
-                <p class="grid-item-text text-left grid-item-text-1">
-                    Survey results indicated that a little over 63% of respondants have never found a relationship
-                    through a social app or site. Of that same group, 55.2% of respondants indicated that the hardest
-                    parts of making a new friend were related to the actions of maintaing the friendship. While the other
-                    44.8% indicated that the hardest parts were related to the beginning moments of meeting someone for 
-                    the first time. 
+                <img src="images/whrl-affinity-diagram.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    Our affinity diagram told us the story of how or why people form new friendships and what they value about 
+                    the interaction of forming friendships as such.
                 </p>
             </div>
 
             <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-affinity-diagram.png" alt="image of whirl affinity diagram" class="img-fluid img-thumbnail">
-                <p class="grid-item-text text-left grid-item-text-1">
-                    In order to understand more, we diagrammed responses from the 6 interviews and gained insights into 
-                    how people went about forming new friendships. We wanted to understand why survey respondants might 
-                    have indicated some of their responses. Themes of <strong>trust, fear, and activities</strong>
-                    were prevelant. We bagan seeing a little confirmation of the hypothesis that first contact was
-                    most difficult because of the identified themes. If this were true then our app would need to
-                    prioritize relieving pains here specifically.
+                <img src="images/whrl-empathy-map.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    With these reasons surrounding making friends synthesized, we could more effectively empatize with our
+                    user. Who were they? What do they say and what do they atually do?
                 </p>
             </div>
 
             <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-empathy-map.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    We still needed more. With our current understanding, we could more effectively empatize with our
-                    user. They would say things like "meeting is awkward," but then would feel as though they, 
-                    "can be vulnerable when [they] trust someone." So, we were dealing with a user that has concerns
-                    about meeting for the first time. They just needed to be able trust; no simple task.
+                <img src="images/whrl-user-persona.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                <p class="grid-item-text grid-item-text-1 left-align">
+                    "Rebecca Stein" is the personification of all the 
+                    expressed needs, pains, and causal relationships that make our user what they are in the context 
+                    of our problem. Rebecca's struggles could now be the team's anchor to problem solving.
                 </p>
-            </div>
-
-            <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-user-persona.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1 text-left">
-                    In order to better approach this expressed need of trust,
-                    we ourselves needed to still know our user better.
-                    "Rebecca Stein" is one such persona that helped us understand
-                    some of the struggles of the individuals at the core of our research.
-                </p>
-            </div>
-
-            <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-interviewee-artifact-01.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1">
-                    What interviewees had to say
-                </p>
-                <!-- 
-                <p class="grid-item-text grid-item-text-1 border-top">
-                    The above depicts some of the personally contributed, raw artifacts that would serve as the 
-                    foundation of the seqrpay website.
-                    <br>
-                    User personas, storyboarding, hueristic evaluations, writing poems, and paper sketching – 
-                    all ways that I ground myself when problem solving.
-                </p>
-                 -->
             </div>
         </div>
 
         <!-- user insights -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">USER INSIGHTS.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        From research findings and analysis, we then codified general
-                        <strong>user insights</strong> about the three main themes operating in concert in regard
-                        to <strong>friendship, trust, fear, and activities.</strong>
-                        <br>
-                        <br>
-                        <strong>Trust and fear</strong> were found to be in mutual opposition considering users were
-                        <strong>intentionally</strong> seeking a friend. They wanted to trust but
-                        also feared other users being inautientic in wanting to establish genuine
-                        friendship.
-                        <br>
-                        <br>
-                        The third theme of <strong>activities</strong> would act as the host of what users hold dear;
-                        what they would share with another user. The bonds of friendship would act as
-                        a foundation and catalyst for trust particulary when they are a primary feature
-                        of first contact.
-                    </p>
-                </div>
+        <div class="row section">
+            <div class="col s12">
+                <a id="item-3-jump" href="#item-3-jump">
+                    <h1 class="section-header">User Insights</h1>
+                </a>
             </div>
-            <div class="col-sm">
+            <div class="col s12 m6 l6">
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    From research findings and analysis, we then codified general
+                    user insights about the three main themes operating in concert in regard
+                    to friendship, trust, fear, and activities.
+                </p>
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    Trust and fear were found to be in mutual opposition considering users were
+                    intentionally seeking a friend. They wanted to trust but
+                    also feared other users being inautientic in wanting to establish genuine
+                    friendship.
+                </p>
+                <p class="col s12 text-stretch-righthand-block left-align">
+                    The third theme of activities would act as the host of what users hold dear;
+                    what they would share with another user. The bonds of friendship would act as
+                    a foundation and catalyst for trust particulary when they are a primary feature
+                    of first contact.
+                </p>
+            </div>
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-2">
-                    <img src="images/whrl-user-insights.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/whrl-user-insights.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                     <p class="grid-item-text grid-item-text-1">
-                        Insights developed on team Miro board
+                        User insights developed on team Miro board.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- problem statement & ideation -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-sm">
+        <!-- feature ideation -->
+        <div class="row section">
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-2">
-                    <img src="images/whrl-ideation.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                    <p class="grid-item-text grid-item-text-1">
-                        Employed "I like..., I wish..., What if...?" methodology
+                    <img src="images/whrl-ideation.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                    <p class="grid-item-text grid-item-text-1 left-align">
+                        Employed "I like..., I wish..., What if...?" methodology to conceptualize potential app features.
                     </p>
                 </div>
             </div>
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">IDEATION.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        With a clear problem defined, <strong>we needed to begin considering creative ways to solve 
-                        the problem in the context of a mobile app.</strong> A handful of great solutions emerged, but in order 
-                        to not lose Rebecca's thread of needs and provide the most impact, we needed to 
-                        pritoritize these solutions.
-                    </p>
-                </div>
+            <div class="col s12 m6 l6">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Feature Ideation</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    With a clear problem defined, we needed to begin considering creative ways to solve 
+                    the problem in the context of a mobile app. A handful of great solutions emerged, but in order 
+                    to not lose Rebecca's thread of needs and provide the most impact, we needed to 
+                    pritoritize these solutions.
+                </p>
             </div>
         </div>
 
-        <!-- value proposition -->
-        <div class="row px-5 py-5">
-            <div class="col-lg text-left">
-                <div class="pb-4">
-                    <h3 class="section-header grid-item-header-boots-project text-left">VALUE STATEMENT:</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pb-4 text-stretch-righthand-block-stretch">
-                        "WHIRL does friend-finding better by fostering genuine first-contact moments
+        <!-- value prop section -->
+        <div class="row section">
+            <!-- section header -->
+            <div class="col s12 left-align">
+                <a id="item-4-jump" href="#item-4-jump">
+                    <h1 class="section-header">Whirl's Value</h1>
+                </a>
+                <p class="flow-text">
+                    Whirl was becoming more clearly defined. 
+                    In order to assess how well this app was helping users to accomplish jobs, to solve the problem, I wanted to formalize ways 
+                    that the app provided value. 
+                </p>
+                <p class="flow-text">
+                    To do that, I first wanted to know what users most needed to do. These primary jobs came with their own pains and their 
+                    own gains. I analyzed what these were before and after a given job. 
+                    For example, a user who wanted to make a profile, would find that Whirl's user profiles are driven by their personality. 
+                    Something desired by users of friend-finding apps and lacking in several of our competitors; a user who might experience the pain 
+                    of feeling awkward would find that Whirl is designed to specifically allieviate such pains through its 
+                    group whirlpool feature – a group-focused first-meeting based feature. 
+                    During research, users expressed that feelings of awkwardness were less in group setting.
+                </p>
+                <p class="flow-text">
+                    With pains and gains surrounding jobs identified, I came up with the following proposition which convey's Whirl's 
+                    value in one sentence:
+                    <blockquote id="quote-emphasis">
+                        "Whirl does friend-finding better by fostering genuine first-contact moments
                         between people based on the contruction of activities-based, personalized profiles 
                         that are the foundations for virtual-to-real relationships."
-                    </p>
-                </div>
-
-                <div class="pb-4">
-                    <h3 class="section-header grid-item-header-boots-project text-left">ASSESSING VALUE</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col text-stretch-righthand-block-stretch">
-                        In order to do assess actual value to users, we examined the jobs they would have while
-                        using WHIRL. Putting these jobs in tangent with the pains and gains users could face would best 
-                        illustrate the value. With this kind of juxtaposition we can see gains and relieved pains 
-                        actualized.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm">
-            <div class="grid-item-image grid-item-wide grid-item-img-2">
-                <img src="images/whrl-value-prop.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                <p class="grid-item-text grid-item-text-1">
-                    Value proposition canvas
+                    </blockquote>
                 </p>
             </div>
+            <!-- section image -->
+            <div class="hero-image-project">
+                <img class="responsive-img materialboxed" src="images/whrl-value-prop.png" alt="project hero image" style="width: 100%;">
+                <figcaption class="grey-text grid-item-text-fig left-align">
+                    This value proposition canvas was developed by the team after I 
+                    examined the pains and gains before and after each user job.
+                </figcaption>
+            </div>
         </div>
 
-        <!-- feature prioritization -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">PRIORITY FEATURES.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        <strong>Personalized User Profiles</strong> – users coul dbe seen the way they wish. Creating
-                        not just trust for the individual user but also among the community of users at large.
-                        <br>
-                        <br>
-                        <strong>"Whirlpools"</strong> – or chat sessions – based on common interests. This would-be 
-                        core feature would alleviate the awkwardness involved in "making the first move" because 
-                        WHRL does it for you with the icebreaker questions (a precursor to actually being in the 
-                        Whirlpool) which are based on your personal profile.
-                        <br>
-                        <br>
-                        <strong>Find & Attend</strong> – this feature would generate suggestions for things to do 
-                        when users decide they want to connect in real space – again based on mutual interest.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm">
+        <!-- feat priority and sketching -->
+        <div class="row section">
+            <div class="col s12 m6 l6">
                 <div class="grid-item-image grid-item-wide grid-item-img-2">
-                    <img src="images/whrl-feat-priority.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                    <p class="grid-item-text grid-item-text-1">
-                        Feature prioritization matrix developed on team Miro board
+                    <img src="images/whrl-feat-priority.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                    <p class="grid-item-text grid-item-text-1 left-align">
+                        Feature prioritization matrix developed as a team on Miro board.
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <h3 class="section-header grid-item-header-boots-project text-left text-stretch-mid-right-block-header">FEATURE DEVELOPMENT.</h3>
-                <p class="text-stretch-mid-right-block">
-                    At this point, we were primed to shift from the ideational toward the actual development 
-                    of the features.
-                    However, we needed to ground what those features would look like in WHIRL. 
-                    A <strong>user journey and a user flow</strong> were helpful here.  
-                </p>
-                <p class="text-stretch-mid-right-block">
-                    Getting to a more concrete place with feature development also meant understanding
-                    the competition and how they might have been solving similar problems. Conducting
-                    <strong>SWOT analyses</strong> of Bumble BFF and Meetup, we were able to get a grasp 
-                    on effective and ineffective practices.
-                </p>
-            </div>
-        </div>
-
-        <!-- sketches & prototyping -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div>
-                    <h3 class="section-header grid-item-header-boots-project text-left">SKETCH & TEST.</h3>
-                </div>
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-righthand-block">
-                        With everything in mind, we could begin sketching.
-                        Each member sketched their own versions of what the solutions
-                        could look like.
-                        <br>
-                        <br>
-                        These sketches would then be made into digital 
-                        wireframes and prototyped together using Adobe XD.
-                        Having prototyped solutions would allow us to test those 
-                        solutions by getting them in the hands of target users.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm">
                 <div class="grid-item-image grid-item-wide grid-item-img-2">
-                    <img src="images/whrl-sketches.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
-                    <p class="grid-item-text grid-item-text-1">
-                        Personal sketch contributions
+                    <img src="images/whrl-sketches.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                    <p class="grid-item-text grid-item-text-1 left-align">
+                        Personal sketch contributions that would inform wireframes and final mockups.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Priority Features</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    Personalized User Profiles – users coul dbe seen the way they wish. Creating
+                    not just trust for the individual user but also among the community of users at large. 
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    "Whirlpools" – This feature is the most unique and core born of ideation. 
+                    It alleviated the awkwardness involved in "making the first move" because 
+                    WHRL does it for the user with the icebreaker questions (a precursor to actually being in the 
+                    Whirlpool) which are based on your personal profile. 
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    Find & Attend – this feature would generate suggestions for things to do 
+                    when users decide they want to connect in real space – again based on mutual interest. 
+                </p>
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Sketching</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    We could now begin sketching what our ideated solutions would actually look like.
+                    Each member sketched their own versions and we then voted on which to move forward with.
+                </p>
+            </div>
+        </div>
+
+        <!-- testing -->
+        <div class="row section">
+            <div class="col s12">
+                <a id="item-3-jump" href="#item-3-jump">
+                    <h1 class="section-header">Usability</h1>
+                </a>
+            </div>
+            <div class="col s12 m6 l6">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">User Flows</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    With solutions being sketched, we would soon need to connect wireframes into a working prototype. Before that, 
+                    we needed to make sure we fully understood 
+                    the way each user would move through the app. Thus, a user flow diagram was created.
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    This diagram follows a user as they: choose to sign in or create a new account, go through 
+                    onboarding (optional), allow notifications, allow location services, 
+                    view their profile, edit their profile, create a profile for the first time, select answers 
+                    to icebreaker questions, 
+                    answer personal questions (optional), provide whirlpool parameters (optional), add a photo, 
+                    join a whirlpool, and search for an activity to attend. 
+                </p>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="grid-item-image grid-item-wide grid-item-img-2">
+                    <img src="images/whrl-user-flow.jpg" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                    <p class="grid-item-text grid-item-text-1 left-align">
+                        Diagram depicting all possible paths a user might take while using Whirl.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <h1 class="grid-item-header-boots-project left-align reduced-margin">Testing</h1>
+                <p class="text-stretch-righthand-block left-align">
+                    For our testing plan, we asked users to perfrom
+                    four tasks: create an account, create a WHIRL profile, 
+                    jump into a "Whirlpool," and finally, select and send an event to the 
+                    "Whirlpool." All testers had 100% success rate in completing 
+                    these tasks.
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    Though we had 100% success in task completion, we were able to identify areas
+                    that needed refinement. Mainly, we learned that we needed to clarify 
+                    UX copy, how buttons are used, and create the option to choose between group 
+                    or 1-on-1 "Whirlpools."
+                </p>
+                <p class="text-stretch-righthand-block left-align">
+                    The necessary iterations were prioritied and allowed the team to begin finalizing the prototype and mockups.
+                </p>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="grid-item-image grid-item-wide grid-item-img-2">
+                    <img src="images/whrl-iterations.jpg" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
+                    <p class="grid-item-text grid-item-text-1 left-align">
+                        We weighed our options of what needed to be iterated on according to usability results and decided which would be 
+                        most pertitent to the overall success of Whirl at this stage in the product lifecycle.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- about testing -->
-        <div class="row px-5 py-5" style="background-color: #f9f9f9;">
-            <div class="col-lg text-left">
-                <div class="row text-left">
-                    <p class="col pt-2 text-stretch-mid-right-block">
-                        For our <strong>testing plan,</strong> we asked users to perfrom
-                        four tasks: <strong>create an account, create a WHIRL profile, 
-                        jump into a "Whirlpool," and finally, select and send an event to the 
-                        "Whirlpool."</strong> All testers had 100% success rate in completing 
-                        these tasks.
-                        <br>
-                        <br>
-                        Though we had 100% success in task completion, we were able to identify areas
-                        that needed refinement. Mainly, we learned that <strong>we needed to clarify 
-                        UX copy, how buttons are used, and create the option to choose between group 
-                        or 1-on-1 "Whirlpools."</strong>
-                        <br>
-                        <br>
-                        Making the necessary iterations allowed to begin finalizing the prototype.
-                    </p>
-                </div>
+        <div class="row section">
+            <div class="col s12 left-align">
+                <!-- fidelity comparison -->
+                <a id="item-5-jump" href="#item-5-jump">
+                    <h1 class="section-header">Fidelity Comparisons</h1>
+                </a>
             </div>
-
-            <!-- fidelity comparison -->
-            <div class="section grid-items">
-                <h2 class="section-header section-header-shrink video-header">Fidelity Comparisons.</h2>
-                <div class="grid-item-image-less grid-item-wide grid-item-img-2">
-                    <p class="grid-item-text grid-item-text-1">
+            <div class="col s12 grid-item-wide grid-item-img-2">
+                <div class="col s12 m6 l6">
+                    <p class="grid-item-text grid-item-text-1 center-align">
                         Low-fi
                     </p>
-                    <img src="images/whrl-lo-fi.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/whrl-lo-fi.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                 </div>
-                <div class="grid-item-image-less grid-item-wide grid-item-img-2">
-                    <p class="grid-item-text grid-item-text-1">
+                <div class="col s12 m6 l6">
+                    <p class="grid-item-text grid-item-text-1 center-align">
                         High-fi (Final)
                     </p>
-                    <img src="images/whrl-hi-fi.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+                    <img src="images/whrl-hi-fi.png" alt="image of secure pay heuristic flow" class="responsive-img materialboxed">
                 </div>
             </div>
         </div>
 
         <!-- outcome -->
-        <div class="row px-5 py-3">
-            <div class="col pl-5 text-left">
-                <h3 class="section-header grid-item-header-boots-project text-left text-stretch-mid-right-block-header">OUTCOME.</h3>
-                <p class="text-stretch-mid-right-block">
+        <div class="row section">
+            <!-- section header -->
+            <div class="col s12 left-align">
+                <a id="item-6-jump" href="#item-6-jump">
+                    <h1 class="section-header">Outcome</h1>
+                </a>
+                <p class="flow-text">
                     The outcome of this case study can best be measured for me on a personal level. Had the team continued
                     into further sprints or utilization of the posits herein for existing friend-finding apps, 
-                    I'm sure we would have some great real-world impacts to measure. In fact, one impact that myself and
+                    I'm sure we would have some great real-world impacts to measure.
+                </p>
+                <p class="flow-text">
+                    In fact, one impact that myself and
                     the team were particularly curious about was the ehtical implications of something like this.
                     We recognized it could be a prime target for abuses. How might we identify and mitigate
                     abuses as such? Another, to better understand some of the psychology
                     behind certain insights and driving factors would have been great to come back to as well;
                     interviewing professionals in human behavior.
+                </p>
+                <p class="flow-text">
                     All in all, this case study impacted me first because it was a problem that was so 
                     connected to the very fundementals of how people do what they do in regard to being social.
-                    Secondly, I was impacted in the sense that it really solidified the relationship 
+                </p>
+                <p class="flow-text">
+                    Lastly, I was impacted in the sense that it really solidified the relationship 
                     between the core tools and methodologies of the design thinking process. Having to come up with an
                     idea from scratch and see it through in a way that is factual and based in real needs of real people, to me,
                     is the magic and skill of what UX Designers and Researchers can accomplish. 
@@ -597,7 +711,27 @@
 </div>
 <!-- end 'next writing/project' div -->
 
-        <!-- JS and ANIME.MIN SCRIPTS BELOW -->
+        <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+
+    <script>
+        $(document).ready(function() {
+    $('.collapsible').collapsible();
+    })
+
+    </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JS and ANIME.MIN SCRIPTS BELOW -->
     <script src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>   
 
