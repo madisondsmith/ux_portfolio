@@ -924,6 +924,13 @@ p {
     }
 }
 
+/* wave animation positioning within grid item */
+#push-out {
+    margin-left: -70px;
+    margin-right: -70px;
+    margin-bottom: -59px;
+}
+
 .project-banner-border {
     position: relative;
     /* display: flex; */
