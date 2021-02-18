@@ -1686,6 +1686,12 @@ p {
     }
 }
 
+@media only screen and (max-height: 600px) {
+    #main-header-down-scale {
+        font-size: 8vw;
+    }
+}
+
 #quote-emphasis {
     margin: 20px 0;
     padding-left: 1.5rem;
