@@ -1731,3 +1731,7 @@ p {
     background: #00a4a6;
     width: 0%;
   }
+
+  a#light {
+      color: white;
+  }
