@@ -47,6 +47,12 @@
 </head>
 
 <body class="layout-project-whrl">
+    <!-- scroll progress indicator -->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>  
+    </div>
     <div class="site-header site-header-portfolio">
         
         <canvas class="site-nav-canvas" width="1860" height="1642"></canvas>
@@ -750,7 +756,20 @@
 
     <!-- JS and ANIME.MIN SCRIPTS BELOW -->
     <script src="js/anime.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>   
+    <script type="text/javascript" src="js/app.js"></script> 
+    
+    <!-- scroll progress script -->
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
 
 </body>
 </html>
