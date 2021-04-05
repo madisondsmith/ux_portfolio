@@ -26,8 +26,8 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>My Resume</title>
@@ -38,6 +38,9 @@
 
     <!-- Favicon -->
     <link rel="icon" href="icons/mds-logo-vertical-white.svg">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -128,8 +131,8 @@
  
     <div class="section grid-items ">
         <h2 class="section-header video-header">My Resume.</h2>    
-        <div class="grid-item grid-item-wide grid-item-5">
-            <img src="images/mds-resume-jan2021.png" alt="image of secure pay heuristic flow" class="img-fluid img-thumbnail">
+        <div class="grid-item grid-item-wide grid-item-5 material-placeholder">
+            <img class="responsive-img materialboxed" src="images/mds-march2021-resume.png" alt="image of Madison's resume">
             
             <div class="contact-links pt-4">
                 <a class="contact-link contact-link-linkedin" href="https://www.linkedin.com/in/madison-smith-a41522147/" aria-label="view Madison's LinkedIn profile">
@@ -147,9 +150,9 @@
                         <img src="icons/youtube-brands.svg" alt="youtube icon">
                     </span>
                 </a>
-                <a class="contact-link contact-link-youtube" href="qr-page.html" aria-label="view Madison's YouTube Channel">
+                <a class="contact-link contact-link-youtube" href="https://play.unity.com/mg/other/ball-block" aria-label="view Madison's YouTube Channel">
                     <span class="contact-icon icon-youtube">
-                        <img src="images/portfolio-qr-code-jan-2021.svg" alt="youtube icon">
+                        <img src="images/unity-simple-logo-dark.png" alt="unity icon" style="width: 30px; height: 30px;">
                     </span>
                 </a>
                 
@@ -157,10 +160,22 @@
         </div>
     </div>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <!-- JS and ANIME.MIN SCRIPTS BELOW -->
     <script src="js/anime.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>    
-    
+    <script type="text/javascript" src="js/app.js"></script>  
+
+    <!-- materialboxed script for images -->
+    <script>
+
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
 </body>
 </html>

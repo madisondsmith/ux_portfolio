@@ -585,6 +585,10 @@ svg {
     100% {transform: translateX(0); opacity: 100%;}
 }
 
+.hero-sketch:hover {
+    transform: scale(1.02);
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -1900,6 +1904,7 @@ p {
 
     background-color: #EB8E2E;
     color: #242424;
+    text-transform: capitalize;
 }
 
 #studio-btn-2 {
@@ -1924,6 +1929,7 @@ p {
     background-color: transparent !important;
     border-color: #EB8E2E;
     color: #EB8E2E;
+    text-transform: capitalize;
 }
 
 @media only screen and (max-width: 880px) {

@@ -137,8 +137,8 @@
     <div class="section hero-section">
         <div class="hero-tab">
             <div class="row">
-                <div class="col s12 m6 hero-sketch-section hero-sketch">
-                    <img class="hero-sketch responsive-img" src="images/first-game-unity-mockup-2x.png" alt="author sketch">
+                <div class="col s12 m6 hero-sketch-section">
+                    <img class="responsive-img" src="images/first-game-unity-mockup-2x.png" alt="author sketch">
                 </div>
                 <div class="col s12 m6">
                     <div>
@@ -146,8 +146,8 @@
                     <h2 class="studio-sub-banner" style="opacity: 1; transform: translateY(0px);">A page dedicated to the myriad rabbit holes down which I travel.</h2>
                     </div>
                     <div>
-                        <a class="waves-effect waves-light btn-large left mobile-full" id="studio-btn-1">View sections</a>
-                        <a class="waves-effect waves-light btn-large left mobile-full" id="studio-btn-2">See something else</a>
+                        <a href="#studio-header-main" href title="jump to page sections" class="waves-effect waves-light btn-large left mobile-full" id="studio-btn-1">View sections</a>
+                        <a href="resume.html" href title="don't worry nothing weird" class="waves-effect waves-light btn-large left mobile-full" id="studio-btn-2">See something else</a>
                     </div>
                 </div>
             </div>
@@ -155,10 +155,10 @@
     
         </div>
     </div>
- 
+
     <div class="section grid-items">
         <h2 id="studio-header-main" class="studio-section-header">My Studio.</h2>
-        <a href="#" aria-label="Go to concept sketches" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio">
+        <a href="#" aria-label="Go to concept sketches" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)">
             <div class="grid-item-bg" style="background-image: url(images/sphere-sketch-1.png);"></div>
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-1">concept sketching</h3>
             <!-- <p class="grid-item-text grid-item-text-1">Read this piece ></p> -->
@@ -169,7 +169,7 @@
              -->
         </a>
 
-        <a href="#" aria-label="Go to first writing" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio">
+        <a href="#" aria-label="Go to first writing" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)">
             <div class="grid-item-bg" style="background-image: url(images/first-game-unity-bg.png);"></div>
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-1">unity projects</h3>
             <!-- <p class="grid-item-text grid-item-text-1">Read this piece ></p> -->
@@ -180,7 +180,7 @@
             -->
         </a>
             
-        <a href="#" aria-label="Go to second writing" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio"> 
+        <a href="#" aria-label="Go to second writing" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)"> 
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-2">micro case studies</h3>
             <!-- <p class="grid-item-text grid-item-text-2">Read this piece ></p> -->
             <!-- view btn
@@ -190,7 +190,7 @@
             -->
         </a>
             
-        <a href="#" aria-label="Go to third writing" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio">
+        <a href="#" aria-label="Go to third writing" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)">
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-3">ux collaborative</h3>
             <!-- <p class="grid-item-text grid-item-text-3">Read this piece ></p> -->
             <!-- view btn
@@ -200,7 +200,7 @@
             -->
         </a>
             
-        <a href="#" aria-label="Go to fourth writing" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio"> 
+        <a href="#" aria-label="Go to fourth writing" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)"> 
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-4">theories and observations</h3>
             <!-- <p class="grid-item-text grid-item-text-4">Read this piece ></p> -->
             <!-- view btn
@@ -210,7 +210,7 @@
             -->
         </a>
             
-        <a href="#" aria-label="Go to fifth writing" id="grid-item-feature-studio" class="grid-item-studio grid-item-wide-studio grid-item-feat-studio">
+        <a href="#" aria-label="Go to fifth writing" id="grid-item-feature-studio" class="tooltipped grid-item-studio grid-item-wide-studio grid-item-feat-studio" data-position="right" data-tooltip="Under consttruction :)">
             <h3 class="grid-item-header-studio grid-item-header-writing grid-item-header-5">x_archives</h3>
             <!-- <p class="grid-item-text grid-item-text-5">Read this piece ></p> -->
             <!-- view btn
@@ -224,6 +224,9 @@
     <!-- JS and ANIME.MIN SCRIPTS BELOW -->
     <script src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>   
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     
     <!-- scroll progress script -->
     <script>
@@ -237,6 +240,15 @@
           document.getElementById("myBar").style.width = scrolled + "%";
         }
         </script>
+
+    <!-- tooltipped -->
+    <script>
+        $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
     
 </body>
