@@ -2053,3 +2053,7 @@ p {
 a#light {
     color: white;
 }
+
+.col.s12.mat-box-padding {
+    padding-bottom: 49px;
+}
