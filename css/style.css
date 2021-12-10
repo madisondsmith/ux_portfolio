@@ -597,10 +597,12 @@ svg {
 }
 */
 
+/*
 .main-visual-scroll {
     display: flex;
     left: 40px;
 }
+*/
 
 @media only screen and (max-width: 768px) {
     .main-visual-scroll {
@@ -610,6 +612,8 @@ svg {
 
 @media only screen and (min-width: 768px) {
     .main-visual-scroll {
+        display: flex;
+        left: 40px;
         font-family: fredericka-the-greatest, serif;
         font-size: 100px;
         font-weight: 400;
