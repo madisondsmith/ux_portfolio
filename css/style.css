@@ -744,7 +744,7 @@ h2 {
     pointer-events: none;
     flex: 1 100%;
 
-    animation-name: sectionHeader;
+    /* animation-name: sectionHeader; */
     animation-duration: 3.2s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
